@@ -1,0 +1,225 @@
+2020-04-04 06:54:55 i.l.c.p.ConnectionWatchdog - Reconnecting, last destination was 192.168.140.130:6379
+2020-04-04 06:55:03 i.l.c.p.ConnectionWatchdog - Reconnecting, last destination was 192.168.140.130:6379
+2020-04-04 06:55:07 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux4:9092 (id: 2147483644 rack: null)
+2020-04-04 06:55:07 i.l.c.p.ReconnectionHandler - Reconnected to 192.168.140.130:6379, Channel channel=0xa3a24c1f, /192.168.140.1:61988 -> /192.168.140.130:6379
+2020-04-04 06:55:10 o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Revoking previously assigned partitions [order-213-0, order-213-1]
+2020-04-04 06:55:10 o.s.k.l.KafkaMessageListenerContainer - partitions revoked: [order-213-0, order-213-1]
+2020-04-04 06:55:10 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] (Re-)joining group
+2020-04-04 06:55:10 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux4:9092 (id: 2147483644 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-04-04 06:55:10 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux3:9092 (id: 2147483645 rack: null)
+2020-04-04 06:55:10 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] (Re-)joining group
+2020-04-04 06:55:15 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux3:9092 (id: 2147483645 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-04-04 06:55:15 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux4:9092 (id: 2147483644 rack: null)
+2020-04-04 06:55:15 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] (Re-)joining group
+2020-04-04 06:55:30 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Successfully joined group with generation 2
+2020-04-04 06:55:30 o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Setting newly assigned partitions [order-213-0, order-213-1]
+2020-04-04 06:55:30 o.s.k.l.KafkaMessageListenerContainer - partitions assigned: [order-213-0, order-213-1]
+2020-04-04 06:59:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 07:04:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 07:09:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 07:14:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 07:19:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 07:24:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 07:29:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 07:34:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 07:39:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 07:44:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 07:49:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 07:54:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 07:59:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 08:04:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 08:09:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 08:14:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 08:19:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 08:24:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 08:29:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 08:34:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 08:39:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 08:44:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 08:49:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 08:54:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 08:59:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 09:04:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 09:09:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 09:14:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 09:19:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 09:24:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 09:29:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 09:34:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 09:39:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 09:44:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 09:49:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 09:49:37 i.l.c.protocol.CommandHandler - [channel=0xa3a24c1f, /192.168.140.1:61988 -> /192.168.140.130:6379, chid=0xf] Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1108)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:628)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:563)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:480)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:442)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-04 09:49:37 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux4:9092 (id: 2147483644 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-04-04 09:49:37 i.l.c.p.ConnectionWatchdog - Reconnecting, last destination was /192.168.140.130:6379
+2020-04-04 09:52:45 i.l.c.p.ConnectionWatchdog - Reconnecting, last destination was 192.168.140.130:6379
+2020-04-04 09:52:53 i.l.c.p.ConnectionWatchdog - Reconnecting, last destination was 192.168.140.130:6379
+2020-04-04 09:52:56 i.l.c.p.ReconnectionHandler - Reconnected to 192.168.140.130:6379, Channel channel=0x42c67282, /192.168.140.1:54044 -> /192.168.140.130:6379
+2020-04-04 09:53:01 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux4:9092 (id: 2147483644 rack: null)
+2020-04-04 09:53:04 o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Revoking previously assigned partitions [order-213-0, order-213-1]
+2020-04-04 09:53:04 o.s.k.l.KafkaMessageListenerContainer - partitions revoked: [order-213-0, order-213-1]
+2020-04-04 09:53:04 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] (Re-)joining group
+2020-04-04 09:53:07 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Successfully joined group with generation 4
+2020-04-04 09:53:07 o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Setting newly assigned partitions [order-213-0, order-213-1]
+2020-04-04 09:53:07 o.s.k.l.KafkaMessageListenerContainer - partitions assigned: [order-213-0, order-213-1]
+2020-04-04 09:57:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 10:02:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 10:07:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 10:12:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 10:17:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 10:22:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 10:27:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 10:32:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 10:37:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 10:42:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 10:47:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 10:52:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 10:57:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 11:02:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 11:07:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 11:12:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 11:17:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 11:22:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 11:27:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 11:32:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 11:37:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 11:42:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 11:47:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 11:52:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 11:57:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 12:02:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 12:07:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 12:12:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 12:17:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 12:22:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 12:27:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 12:32:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 12:37:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 12:42:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 12:47:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 12:52:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 12:57:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 13:02:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 13:07:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 13:12:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 13:17:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 13:22:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 13:27:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 13:32:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 13:37:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 13:42:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 13:47:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 13:52:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 13:57:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 14:02:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 14:07:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 14:12:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 14:17:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 14:22:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 14:27:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 14:32:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 14:37:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 14:42:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 14:47:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 14:52:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 14:57:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 15:02:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 15:07:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 15:12:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 15:17:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 15:22:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 15:27:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 15:32:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 15:37:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 15:42:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 15:47:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 15:52:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 15:57:34 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 16:02:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 16:07:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 16:12:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 16:17:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 16:22:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 16:27:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 16:32:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 16:37:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 16:42:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 16:47:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 16:52:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 16:57:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 17:02:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 17:07:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 17:12:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 17:17:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 17:22:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 17:27:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 17:32:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 17:37:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 17:42:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 17:47:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 17:52:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 17:57:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 18:02:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 18:07:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 18:12:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 18:17:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 18:22:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 18:27:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 18:32:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 18:37:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 18:42:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 18:47:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 18:52:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 18:57:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 19:02:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 19:07:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 19:12:36 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-04 19:14:11 i.l.c.protocol.CommandHandler - [channel=0x42c67282, /192.168.140.1:54044 -> /192.168.140.130:6379, chid=0x1d] Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1108)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:628)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:563)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:480)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:442)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-04 19:14:12 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux4:9092 (id: 2147483644 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-04-04 19:14:12 i.l.c.p.ConnectionWatchdog - Reconnecting, last destination was /192.168.140.130:6379
+2020-04-04 21:20:32 i.l.c.p.ConnectionWatchdog - Reconnecting, last destination was 192.168.140.130:6379
+2020-04-04 21:20:40 i.l.c.p.ConnectionWatchdog - Reconnecting, last destination was 192.168.140.130:6379
+2020-04-04 21:20:44 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux4:9092 (id: 2147483644 rack: null)
+2020-04-04 21:20:47 i.l.c.p.ReconnectionHandler - Reconnected to 192.168.140.130:6379, Channel channel=0x658df516, /192.168.140.1:62341 -> /192.168.140.130:6379
+2020-04-04 21:20:48 o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Revoking previously assigned partitions [order-213-0, order-213-1]
+2020-04-04 21:20:48 o.s.k.l.KafkaMessageListenerContainer - partitions revoked: [order-213-0, order-213-1]
+2020-04-04 21:20:48 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] (Re-)joining group
+2020-04-04 21:20:56 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] (Re-)joining group
+2020-04-04 21:21:01 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] (Re-)joining group
+2020-04-04 21:21:01 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Successfully joined group with generation 8
+2020-04-04 21:21:01 o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Setting newly assigned partitions [order-213-0, order-213-1]
+2020-04-04 21:21:01 o.s.k.l.KafkaMessageListenerContainer - partitions assigned: [order-213-0, order-213-1]

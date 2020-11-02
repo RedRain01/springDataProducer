@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.example.springservice.dao.OrderdetailDao">
+
+	<!-- 结果Map -->
+	<resultMap id="BaseResultMap" type="com.example.springpublic.entity.Orderdetail">
+		<result property="orderid" jdbcType="VARCHAR" column="orderid"/>
+		<result property="cargoNum" jdbcType="VARCHAR" column="cargoNum"/>
+		<result property="price" jdbcType="DOUBLE" column="price"/>
+		<result property="orderTime" jdbcType="TIMESTAMP" column="orderTime"/>
+		<result property="userCode" jdbcType="VARCHAR" column="userCode"/>
+		<result property="port" jdbcType="VARCHAR" column="port"/>
+	</resultMap>
+
+	<!-- 查询列 -->
+	<sql id="BaseColumnList">
+		orderid,cargoNum,price,orderTime,userCode,port
+	</sql>
+
+	<!--创建记录 -->
+	<insert id="create" parameterType="com.example.springpublic.entity.Orderdetail">
+		INSERT INTO orderdetail2
+		<trim prefix="(" suffix=")" suffixOverrides="," >
+			<if test="orderid!=null and orderid!=''">orderid,</if>
+			<if test="cargoNum!=null and cargoNum!=''">cargoNum,</if>
+			<if test="price!=null and price!=''">price,</if>
+			<if test="orderTime!=null">orderTime,</if>
+			<if test="userCode!=null and userCode!=''">userCode,</if>
+			<if test="port!=null and port!=''">port</if>
+		</trim>
+		<trim prefix="VALUES (" suffix=")" suffixOverrides="," >
+			<if test="orderid!=null and orderid!=''">#{orderid,jdbcType=VARCHAR},</if>
+			<if test="cargoNum!=null and cargoNum!=''">#{cargoNum,jdbcType=VARCHAR},</if>
+			<if test="price!=null and price!=''">#{price,jdbcType=DOUBLE},</if>
+			<if test="orderTime!=null">#{orderTime,jdbcType=TIMESTAMP},</if>
+			<if test="userCode!=null and userCode!=''">#{userCode,jdbcType=VARCHAR},</if>
+			<if test="port!=null and port!=''">#{port,jdbcType=VARCHAR}</if>
+		</trim>
+	</insert>
+
+
+	<!-- 根据主键查询记录 -->
+	<select id="all"  resultMap="BaseResultMap">
+		SELECT <include refid="BaseColumnList" />
+		FROM orderdetail where 1=1
+	</select>
+
+	<!-- 根据主键删除记录 -->
+	<delete id="deleteByPk" parameterType="java.lang.String">
+		DELETE FROM orderdetail
+		<where>
+			orderid = #{orderid,jdbcType=VARCHAR}
+		</where>
+	</delete>
+
+	<!-- 按对象查询 -->
+	<select id="queryByOrderdetail" parameterType="com.example.springpublic.entity.Orderdetail" resultMap="BaseResultMap">
+		SELECT <include refid="BaseColumnList" />
+		FROM orderdetail
+		<where>
+			1=1
+			<if test="orderid!=null and orderid!=''">AND orderid = #{orderid,jdbcType=VARCHAR}</if>
+			<if test="cargoNum!=null and cargoNum!=''">AND cargoNum = #{cargoNum,jdbcType=VARCHAR}</if>
+			<if test="price!=null and price!=''">AND price = #{price,jdbcType=DOUBLE}</if>
+			<if test="orderTime!=null">AND orderTime = #{orderTime,jdbcType=TIMESTAMP}</if>
+			<if test="userCode!=null and userCode!=''">AND userCode = #{userCode,jdbcType=VARCHAR}</if>
+			<if test="port!=null and port!=''">AND port = #{port,jdbcType=VARCHAR}</if>
+		</where>
+	</select>
+
+	<sql id="pageHead">
+	   SELECT * FROM (
+	       SELECT ROWNUM AS RN, TM.* FROM (
+
+	</sql>
+	<sql id="pageTail">
+		) TM ) TMP
+		<where>
+			TMP.RN &gt; (${pageNum}-1)*${pageSize}
+			AND TMP.RN &lt;= ${pageNum}*${pageSize}
+		</where>
+	</sql>
+	<sql id="pageBody">
+		SELECT <include refid="BaseColumnList"/>
+		FROM orderdetail
+		<where>
+			<if test="orderid!=null and orderid!=''">AND orderid = #{orderid,jdbcType=VARCHAR}</if>
+			<if test="cargoNum!=null and cargoNum!=''">AND cargoNum = #{cargoNum,jdbcType=VARCHAR}</if>
+			<if test="price!=null and price!=''">AND price = #{price,jdbcType=DOUBLE}</if>
+			<if test="orderTime!=null">AND orderTime = #{orderTime,jdbcType=TIMESTAMP}</if>
+			<if test="userCode!=null and userCode!=''">AND userCode = #{userCode,jdbcType=VARCHAR}</if>
+			<if test="port!=null and port!=''">AND port = #{port,jdbcType=VARCHAR}</if>
+		</where>
+	</sql>
+
+	<!-- 根据条件分页 -->
+	<select id="queryByPage" parameterType="java.util.Map" resultMap="BaseResultMap">
+		<include refid="pageHead"/>
+		<include refid="pageBody"/>
+		<include refid="pageTail"/>
+	</select>
+
+	<!-- 根据条件查询总数 -->
+	<select id="countByCondtion" parameterType="java.util.Map" resultType="long">
+		SELECT COUNT(*) FROM orderdetail
+		<where>
+			1=1
+			<if test="orderid!=null and orderid!=''">AND orderid = #{orderid,jdbcType=VARCHAR}</if>
+			<if test="cargoNum!=null and cargoNum!=''">AND cargoNum = #{cargoNum,jdbcType=VARCHAR}</if>
+			<if test="price!=null and price!=''">AND price = #{price,jdbcType=DOUBLE}</if>
+			<if test="orderTime!=null">AND orderTime = #{orderTime,jdbcType=TIMESTAMP}</if>
+			<if test="userCode!=null and userCode!=''">AND userCode = #{userCode,jdbcType=VARCHAR}</if>
+			<if test="port!=null and port!=''">AND port = #{port,jdbcType=VARCHAR}</if>
+		</where>
+	</select>
+</mapper>
+

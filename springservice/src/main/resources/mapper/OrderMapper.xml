@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.example.springservice.dao.OrderMapper">
+
+	<!-- 结果Map -->
+	<resultMap id="BaseResultMap" type="com.example.springpublic.entity.Order">
+		<result property="id" jdbcType="VARCHAR" column="id"/>
+		<result property="commodityId" jdbcType="VARCHAR" column="commodity_id"/>
+		<result property="orderNum" jdbcType="INTEGER" column="order_num"/>
+		<result property="usercode" jdbcType="VARCHAR" column="usercode"/>
+		<result property="status" jdbcType="VARCHAR" column="status"/>
+		<result property="amount" jdbcType="DOUBLE" column="amount"/>
+		<result property="phoneNum" jdbcType="VARCHAR" column="phone_num"/>
+		<result property="createTime" jdbcType="TIMESTAMP" column="create_time"/>
+		<result property="addr" jdbcType="VARCHAR" column="addr"/>
+		<result property="orderFlag" jdbcType="VARCHAR" column="order_flag"/>
+	</resultMap>
+
+	<!-- 查询列 -->
+	<sql id="BaseColumnList">
+		id,commodity_id,order_num,usercode,status,amount,phone_num,create_time,addr,order_flag
+	</sql>
+
+	<!--创建记录 -->
+	<insert id="create" parameterType="com.example.springpublic.entity.Order">
+		INSERT INTO `order`
+		<trim prefix="(" suffix=")" suffixOverrides="," >
+			<if test="id!=null and id!=''">id,</if>
+			<if test="commodityId!=null and commodityId!=''">commodity_id,</if>
+			<if test="orderNum!=null">order_num,</if>
+			<if test="usercode!=null and usercode!=''">usercode,</if>
+			<if test="status!=null and status!=''">status,</if>
+			<if test="amount!=null">amount,</if>
+			<if test="phoneNum!=null and phoneNum!=''">phone_num,</if>
+			<if test="createTime!=null">create_time,</if>
+			<if test="addr!=null and addr!=''">addr,</if>
+			<if test="orderFlag!=null and orderFlag!=''">order_flag</if>
+		</trim>
+		<trim prefix="VALUES (" suffix=")" suffixOverrides="," >
+			<if test="id!=null and id!=''">#{id,jdbcType=VARCHAR},</if>
+			<if test="commodityId!=null and commodityId!=''">#{commodityId,jdbcType=VARCHAR},</if>
+			<if test="orderNum!=null">#{orderNum,jdbcType=INTEGER},</if>
+			<if test="usercode!=null and usercode!=''">#{usercode,jdbcType=VARCHAR},</if>
+			<if test="status!=null and status!=''">#{status,jdbcType=VARCHAR},</if>
+			<if test="amount!=null">#{amount,jdbcType=DOUBLE},</if>
+			<if test="phoneNum!=null and phoneNum!=''">#{phoneNum,jdbcType=VARCHAR},</if>
+			<if test="createTime!=null">#{createTime,jdbcType=TIMESTAMP},</if>
+			<if test="addr!=null and addr!=''">#{addr,jdbcType=VARCHAR},</if>
+			<if test="orderFlag!=null and orderFlag!=''">#{orderFlag,jdbcType=VARCHAR}</if>
+		</trim>
+	</insert>
+
+	<!-- 更新记录 -->
+	<update id="updateByPk" parameterType="com.example.springpublic.entity.Order">
+		UPDATE order
+		<set>
+			<trim suffixOverrides=",">
+				<if test="commodityId!=null and commodityId!=''">commodity_id = #{commodityId,jdbcType=VARCHAR},</if>
+				<if test="orderNum!=null">order_num = #{orderNum,jdbcType=INTEGER},</if>
+				<if test="usercode!=null and usercode!=''">usercode = #{usercode,jdbcType=VARCHAR},</if>
+				<if test="status!=null and status!=''">status = #{status,jdbcType=VARCHAR},</if>
+				<if test="amount!=null">amount = #{amount,jdbcType=DOUBLE},</if>
+				<if test="phoneNum!=null and phoneNum!=''">phone_num = #{phoneNum,jdbcType=VARCHAR},</if>
+				<if test="createTime!=null">create_time = #{createTime,jdbcType=TIMESTAMP},</if>
+				<if test="addr!=null and addr!=''">addr = #{addr,jdbcType=VARCHAR},</if>
+				<if test="orderFlag!=null and orderFlag!=''">order_flag = #{orderFlag,jdbcType=VARCHAR}</if>
+			</trim>
+		</set>
+		<where>
+			id = #{id,jdbcType=VARCHAR}
+		</where>
+	</update>
+
+	<!-- 根据主键查询记录 -->
+	<select id="queryByPk" parameterType="java.lang.String" resultMap="BaseResultMap">
+		SELECT <include refid="BaseColumnList" />
+		FROM order
+		<where>
+			id = #{id,jdbcType=VARCHAR}
+		</where>
+	</select>
+
+	<!-- 根据主键删除记录 -->
+	<delete id="deleteByPk" parameterType="java.lang.String">
+		DELETE FROM order
+		<where>
+			id = #{id,jdbcType=VARCHAR}
+		</where>
+	</delete>
+
+	<!-- 按对象查询 -->
+	<select id="queryByOrder" parameterType="com.example.springpublic.entity.Order" resultMap="BaseResultMap">
+		SELECT <include refid="BaseColumnList" />
+		FROM order
+		<where>
+			1=1
+			<if test="id!=null and id!=''">AND id = #{id,jdbcType=VARCHAR}</if>
+			<if test="commodityId!=null and commodityId!=''">AND commodity_id = #{commodityId,jdbcType=VARCHAR}</if>
+			<if test="orderNum!=null">AND order_num = #{orderNum,jdbcType=INTEGER}</if>
+			<if test="usercode!=null and usercode!=''">AND usercode = #{usercode,jdbcType=VARCHAR}</if>
+			<if test="status!=null and status!=''">AND status = #{status,jdbcType=VARCHAR}</if>
+			<if test="amount!=null">AND amount = #{amount,jdbcType=DOUBLE}</if>
+			<if test="phoneNum!=null and phoneNum!=''">AND phone_num = #{phoneNum,jdbcType=VARCHAR}</if>
+			<if test="createTime!=null">AND create_time = #{createTime,jdbcType=TIMESTAMP}</if>
+			<if test="addr!=null and addr!=''">AND addr = #{addr,jdbcType=VARCHAR}</if>
+			<if test="orderFlag!=null and orderFlag!=''">AND order_flag = #{orderFlag,jdbcType=VARCHAR}</if>
+		</where>
+	</select>
+
+	<sql id="pageHead">
+	   SELECT * FROM (
+	       SELECT ROWNUM AS RN, TM.* FROM (
+	   
+	</sql>
+	<sql id="pageTail">
+		) TM ) TMP
+		<where>
+			TMP.RN &gt; (${pageNum}-1)*${pageSize}
+			AND TMP.RN &lt;= ${pageNum}*${pageSize}
+		</where>
+	</sql>
+	<sql id="pageBody">
+		SELECT <include refid="BaseColumnList"/>
+		FROM order
+		<where>
+			<if test="id!=null and id!=''">AND id = #{id,jdbcType=VARCHAR}</if>
+			<if test="commodityId!=null and commodityId!=''">AND commodity_id = #{commodityId,jdbcType=VARCHAR}</if>
+			<if test="orderNum!=null">AND order_num = #{orderNum,jdbcType=INTEGER}</if>
+			<if test="usercode!=null and usercode!=''">AND usercode = #{usercode,jdbcType=VARCHAR}</if>
+			<if test="status!=null and status!=''">AND status = #{status,jdbcType=VARCHAR}</if>
+			<if test="amount!=null">AND amount = #{amount,jdbcType=DOUBLE}</if>
+			<if test="phoneNum!=null and phoneNum!=''">AND phone_num = #{phoneNum,jdbcType=VARCHAR}</if>
+			<if test="createTime!=null">AND create_time = #{createTime,jdbcType=TIMESTAMP}</if>
+			<if test="addr!=null and addr!=''">AND addr = #{addr,jdbcType=VARCHAR}</if>
+			<if test="orderFlag!=null and orderFlag!=''">AND order_flag = #{orderFlag,jdbcType=VARCHAR}</if>
+		</where>
+	</sql>
+
+	<!-- 根据条件分页 -->
+	<select id="queryByPage" parameterType="java.util.Map" resultMap="BaseResultMap">
+		<include refid="pageHead"/>
+		<include refid="pageBody"/>
+		<include refid="pageTail"/>
+	</select>
+
+	<!-- 根据条件查询总数 -->
+	<select id="countByCondtion" parameterType="java.util.Map" resultType="long">
+		SELECT COUNT(*) FROM order
+		<where>
+			1=1
+			<if test="id!=null and id!=''">AND id = #{id,jdbcType=VARCHAR}</if>
+			<if test="commodityId!=null and commodityId!=''">AND commodity_id = #{commodityId,jdbcType=VARCHAR}</if>
+			<if test="orderNum!=null">AND order_num = #{orderNum,jdbcType=INTEGER}</if>
+			<if test="usercode!=null and usercode!=''">AND usercode = #{usercode,jdbcType=VARCHAR}</if>
+			<if test="status!=null and status!=''">AND status = #{status,jdbcType=VARCHAR}</if>
+			<if test="amount!=null">AND amount = #{amount,jdbcType=DOUBLE}</if>
+			<if test="phoneNum!=null and phoneNum!=''">AND phone_num = #{phoneNum,jdbcType=VARCHAR}</if>
+			<if test="createTime!=null">AND create_time = #{createTime,jdbcType=TIMESTAMP}</if>
+			<if test="addr!=null and addr!=''">AND addr = #{addr,jdbcType=VARCHAR}</if>
+			<if test="orderFlag!=null and orderFlag!=''">AND order_flag = #{orderFlag,jdbcType=VARCHAR}</if>
+		</where>
+	</select>
+</mapper>
+

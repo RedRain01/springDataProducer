@@ -1,0 +1,12 @@
+2020-09-06 12:56:15 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisson' defined in class path resource [com/example/springservice/config/RedissonConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redisson' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 192.168.140.130/192.168.140.130:6379
+2020-09-06 12:56:16 o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eurekaRibbonClientConfiguration': Unsatisfied dependency expressed through field 'clientConfig'; nested exception is org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaClientConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2020-09-06 13:29:52 c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-09-06 13:29:52 c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-09-06 13:33:09 c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-09-06 13:33:09 c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-09-06 14:03:55 c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-09-06 14:03:55 c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-09-06 14:12:12 c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-09-06 14:12:12 c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-09-06 14:30:08 c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-09-06 14:30:08 c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.

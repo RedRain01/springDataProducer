@@ -1,0 +1,22 @@
+2020-10-25 13:52:05 c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-10-25 13:52:05 c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-10-25 21:27:50 o.a.k.clients.NetworkClient - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Connection to node 2 could not be established. Broker may not be available.
+2020-10-25 21:28:11 o.a.k.clients.NetworkClient - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Connection to node 3 could not be established. Broker may not be available.
+2020-10-25 21:28:29 o.a.k.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 could not be established. Broker may not be available.
+2020-10-25 21:28:32 o.a.k.clients.NetworkClient - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Connection to node 2 could not be established. Broker may not be available.
+2020-10-25 21:28:50 o.a.k.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 2 could not be established. Broker may not be available.
+2020-10-25 21:28:53 o.a.k.clients.NetworkClient - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Connection to node 3 could not be established. Broker may not be available.
+2020-10-25 21:29:11 o.a.k.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 could not be established. Broker may not be available.
+2020-10-25 21:29:14 o.a.k.clients.NetworkClient - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Connection to node 2 could not be established. Broker may not be available.
+2020-10-25 21:29:32 o.a.k.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 2 could not be established. Broker may not be available.
+2020-10-25 21:29:35 o.a.k.clients.NetworkClient - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Connection to node 3 could not be established. Broker may not be available.
+2020-10-25 21:29:53 o.a.k.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 could not be established. Broker may not be available.
+2020-10-25 21:29:56 o.a.k.clients.NetworkClient - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Connection to node 2 could not be established. Broker may not be available.
+2020-10-25 21:30:14 o.a.k.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 2 could not be established. Broker may not be available.
+2020-10-25 21:30:17 o.a.k.clients.NetworkClient - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Connection to node 3 could not be established. Broker may not be available.
+2020-10-25 21:30:35 o.a.k.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 could not be established. Broker may not be available.
+2020-10-25 21:30:38 o.a.k.clients.NetworkClient - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Connection to node 2 could not be established. Broker may not be available.
+2020-10-25 21:30:56 o.a.k.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 2 could not be established. Broker may not be available.
+2020-10-25 21:30:59 o.a.k.clients.NetworkClient - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Connection to node 3 could not be established. Broker may not be available.
+2020-10-25 21:31:17 o.a.k.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 could not be established. Broker may not be available.
+2020-10-25 21:31:20 o.a.k.clients.NetworkClient - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Connection to node 2 could not be established. Broker may not be available.

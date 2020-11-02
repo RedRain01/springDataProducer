@@ -1,0 +1,1292 @@
+2020-04-02 22:08:16 o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@69653e16: startup date [Thu Apr 02 22:08:16 CST 2020]; root of context hierarchy
+2020-04-02 22:08:16 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-02 22:08:16 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4e7a87f1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 22:08:17 c.e.s.SpringserviceApplication - No active profile set, falling back to default profiles: default
+2020-04-02 22:08:17 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@c7a977f: startup date [Thu Apr 02 22:08:17 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@69653e16
+2020-04-02 22:08:18 o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-02 22:08:19 o.s.c.c.scope.GenericScope - BeanFactory id=0d3f4bb3-b367-3247-8de2-c32bbf8fcca3
+2020-04-02 22:08:19 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-02 22:08:19 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$6129677] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 22:08:19 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$326084f4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 22:08:19 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4e7a87f1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 22:08:20 o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8789 (http)
+2020-04-02 22:08:20 o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8789"]
+2020-04-02 22:08:20 o.a.c.core.StandardService - Starting service [Tomcat]
+2020-04-02 22:08:20 o.a.c.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2020-04-02 22:08:20 o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\soft\Java8\Java8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\softapp\develop\Xshell6\Xlpd 6\;D:\softapp\develop\Xshell6\Xftp 6\;D:\softapp\develop\Xshell6\Xshell 6\;D:\softapp\develop\Xshell6\Xmanager 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\softapp\develop\Git\cmd;D:\softapp\develop\node\;E:\allSoft\develop\mysql-5.6.46-winx64\bin;C:\Users\why\AppData\Local\Microsoft\WindowsApps;C:\Users\why\AppData\Local\BypassRuntm;C:\Users\why\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\why\AppData\Roaming\npm;D:\softapp\daily\bandizip\;.]
+2020-04-02 22:08:20 o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-04-02 22:08:20 o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2664 ms
+2020-04-02 22:08:21 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-04-02 22:08:21 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'tracingFilter' to: [/*]
+2020-04-02 22:08:21 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2020-04-02 22:08:21 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-04-02 22:08:21 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-04-02 22:08:21 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-04-02 22:08:21 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2020-04-02 22:08:21 o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2020-04-02 22:08:21 o.s.b.w.s.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+2020-04-02 22:08:21 c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-04-02 22:08:22 c.a.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-04-02 22:08:23 org.redisson.Version - Redisson 3.11.2
+2020-04-02 22:08:35 c.a.druid.pool.DruidDataSource - {dataSource-1} closed
+2020-04-02 22:08:35 o.s.c.a.AnnotationConfigApplicationContext - Refreshing SpringClientFactory-localhost: startup date [Thu Apr 02 22:08:35 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@c7a977f
+2020-04-02 22:08:36 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-02 22:08:36 o.a.c.core.StandardService - Stopping service [Tomcat]
+2020-04-02 22:11:49 o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@ebaa6cb: startup date [Thu Apr 02 22:11:49 CST 2020]; root of context hierarchy
+2020-04-02 22:11:49 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-02 22:11:49 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4c3e9054] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 22:11:50 c.e.s.SpringserviceApplication - No active profile set, falling back to default profiles: default
+2020-04-02 22:11:50 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d868997: startup date [Thu Apr 02 22:11:50 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@ebaa6cb
+2020-04-02 22:11:51 o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-02 22:11:51 o.s.c.c.scope.GenericScope - BeanFactory id=0d3f4bb3-b367-3247-8de2-c32bbf8fcca3
+2020-04-02 22:11:51 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-02 22:11:51 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$3d69eda] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 22:11:51 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$30248d57] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 22:11:51 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4c3e9054] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 22:11:52 o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8789 (http)
+2020-04-02 22:11:52 o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8789"]
+2020-04-02 22:11:52 o.a.c.core.StandardService - Starting service [Tomcat]
+2020-04-02 22:11:52 o.a.c.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2020-04-02 22:11:52 o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\soft\Java8\Java8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\softapp\develop\Xshell6\Xlpd 6\;D:\softapp\develop\Xshell6\Xftp 6\;D:\softapp\develop\Xshell6\Xshell 6\;D:\softapp\develop\Xshell6\Xmanager 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\softapp\develop\Git\cmd;D:\softapp\develop\node\;E:\allSoft\develop\mysql-5.6.46-winx64\bin;C:\Users\why\AppData\Local\Microsoft\WindowsApps;C:\Users\why\AppData\Local\BypassRuntm;C:\Users\why\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\why\AppData\Roaming\npm;D:\softapp\daily\bandizip\;.]
+2020-04-02 22:11:52 o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-04-02 22:11:52 o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2234 ms
+2020-04-02 22:11:53 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-04-02 22:11:53 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'tracingFilter' to: [/*]
+2020-04-02 22:11:53 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2020-04-02 22:11:53 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-04-02 22:11:53 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-04-02 22:11:53 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-04-02 22:11:53 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2020-04-02 22:11:53 o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2020-04-02 22:11:53 o.s.b.w.s.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+2020-04-02 22:11:53 c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-04-02 22:11:54 c.a.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-04-02 22:11:54 org.redisson.Version - Redisson 3.11.2
+2020-04-02 22:12:07 c.a.druid.pool.DruidDataSource - {dataSource-1} closed
+2020-04-02 22:12:07 o.s.c.a.AnnotationConfigApplicationContext - Refreshing SpringClientFactory-localhost: startup date [Thu Apr 02 22:12:07 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d868997
+2020-04-02 22:12:08 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-02 22:12:08 o.a.c.core.StandardService - Stopping service [Tomcat]
+2020-04-02 22:19:02 o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4a194c39: startup date [Thu Apr 02 22:19:02 CST 2020]; root of context hierarchy
+2020-04-02 22:19:02 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-02 22:19:02 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$107baff2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 22:19:03 c.e.s.SpringserviceApplication - No active profile set, falling back to default profiles: default
+2020-04-02 22:19:03 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@304b9f1a: startup date [Thu Apr 02 22:19:03 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4a194c39
+2020-04-02 22:19:04 o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-02 22:19:04 o.s.c.c.scope.GenericScope - BeanFactory id=0d3f4bb3-b367-3247-8de2-c32bbf8fcca3
+2020-04-02 22:19:04 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-02 22:19:04 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$c813be78] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 22:19:04 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f461acf5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 22:19:04 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$107baff2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 22:19:05 o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8789 (http)
+2020-04-02 22:19:05 o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8789"]
+2020-04-02 22:19:05 o.a.c.core.StandardService - Starting service [Tomcat]
+2020-04-02 22:19:05 o.a.c.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2020-04-02 22:19:05 o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\soft\Java8\Java8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\softapp\develop\Xshell6\Xlpd 6\;D:\softapp\develop\Xshell6\Xftp 6\;D:\softapp\develop\Xshell6\Xshell 6\;D:\softapp\develop\Xshell6\Xmanager 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\softapp\develop\Git\cmd;D:\softapp\develop\node\;E:\allSoft\develop\mysql-5.6.46-winx64\bin;C:\Users\why\AppData\Local\Microsoft\WindowsApps;C:\Users\why\AppData\Local\BypassRuntm;C:\Users\why\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\why\AppData\Roaming\npm;D:\softapp\daily\bandizip\;.]
+2020-04-02 22:19:05 o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-04-02 22:19:05 o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2187 ms
+2020-04-02 22:19:06 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-04-02 22:19:06 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'tracingFilter' to: [/*]
+2020-04-02 22:19:06 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2020-04-02 22:19:06 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-04-02 22:19:06 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-04-02 22:19:06 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-04-02 22:19:06 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2020-04-02 22:19:06 o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2020-04-02 22:19:06 o.s.b.w.s.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+2020-04-02 22:19:06 c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-04-02 22:19:07 c.a.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-04-02 22:19:07 org.redisson.Version - Redisson 3.11.2
+2020-04-02 22:19:20 c.a.druid.pool.DruidDataSource - {dataSource-1} closed
+2020-04-02 22:19:20 o.s.c.a.AnnotationConfigApplicationContext - Refreshing SpringClientFactory-localhost: startup date [Thu Apr 02 22:19:20 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@304b9f1a
+2020-04-02 22:19:20 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-02 22:19:21 o.a.c.core.StandardService - Stopping service [Tomcat]
+2020-04-02 22:42:40 o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@59d2400d: startup date [Thu Apr 02 22:42:40 CST 2020]; root of context hierarchy
+2020-04-02 22:42:40 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-02 22:42:40 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f4f546be] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 22:42:41 c.e.s.SpringserviceApplication - No active profile set, falling back to default profiles: default
+2020-04-02 22:42:41 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a356a0d: startup date [Thu Apr 02 22:42:41 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@59d2400d
+2020-04-02 22:42:42 o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-02 22:42:42 o.s.c.c.scope.GenericScope - BeanFactory id=0d3f4bb3-b367-3247-8de2-c32bbf8fcca3
+2020-04-02 22:42:42 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-02 22:42:42 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$ac8d5544] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 22:42:42 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d8db43c1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 22:42:42 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f4f546be] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 22:42:43 o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8789 (http)
+2020-04-02 22:42:43 o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8789"]
+2020-04-02 22:42:43 o.a.c.core.StandardService - Starting service [Tomcat]
+2020-04-02 22:42:43 o.a.c.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2020-04-02 22:42:43 o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\soft\Java8\Java8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\softapp\develop\Xshell6\Xlpd 6\;D:\softapp\develop\Xshell6\Xftp 6\;D:\softapp\develop\Xshell6\Xshell 6\;D:\softapp\develop\Xshell6\Xmanager 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\softapp\develop\Git\cmd;D:\softapp\develop\node\;E:\allSoft\develop\mysql-5.6.46-winx64\bin;C:\Users\why\AppData\Local\Microsoft\WindowsApps;C:\Users\why\AppData\Local\BypassRuntm;C:\Users\why\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\why\AppData\Roaming\npm;D:\softapp\daily\bandizip\;.]
+2020-04-02 22:42:43 o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-04-02 22:42:43 o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2221 ms
+2020-04-02 22:42:44 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-04-02 22:42:44 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'tracingFilter' to: [/*]
+2020-04-02 22:42:44 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2020-04-02 22:42:44 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-04-02 22:42:44 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-04-02 22:42:44 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-04-02 22:42:44 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2020-04-02 22:42:44 o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2020-04-02 22:42:44 o.s.b.w.s.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+2020-04-02 22:42:44 c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-04-02 22:42:45 c.a.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-04-02 22:42:45 org.redisson.Version - Redisson 3.11.2
+2020-04-02 22:42:58 c.a.druid.pool.DruidDataSource - {dataSource-1} closed
+2020-04-02 22:42:59 o.s.c.a.AnnotationConfigApplicationContext - Refreshing SpringClientFactory-localhost: startup date [Thu Apr 02 22:42:59 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a356a0d
+2020-04-02 22:42:59 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-02 22:42:59 o.a.c.core.StandardService - Stopping service [Tomcat]
+2020-04-02 22:48:16 o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68be8808: startup date [Thu Apr 02 22:48:16 CST 2020]; root of context hierarchy
+2020-04-02 22:48:16 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-02 22:48:16 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4a3f7ad8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 22:48:17 c.e.s.SpringserviceApplication - No active profile set, falling back to default profiles: default
+2020-04-02 22:48:17 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@210f0cc1: startup date [Thu Apr 02 22:48:17 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@68be8808
+2020-04-02 22:48:18 o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-02 22:48:18 o.s.c.c.scope.GenericScope - BeanFactory id=0d3f4bb3-b367-3247-8de2-c32bbf8fcca3
+2020-04-02 22:48:18 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-02 22:48:18 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$1d7895e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 22:48:19 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2e2577db] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 22:48:19 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4a3f7ad8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 22:48:19 o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8789 (http)
+2020-04-02 22:48:19 o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8789"]
+2020-04-02 22:48:19 o.a.c.core.StandardService - Starting service [Tomcat]
+2020-04-02 22:48:19 o.a.c.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2020-04-02 22:48:19 o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\soft\Java8\Java8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\softapp\develop\Xshell6\Xlpd 6\;D:\softapp\develop\Xshell6\Xftp 6\;D:\softapp\develop\Xshell6\Xshell 6\;D:\softapp\develop\Xshell6\Xmanager 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\softapp\develop\Git\cmd;D:\softapp\develop\node\;E:\allSoft\develop\mysql-5.6.46-winx64\bin;C:\Users\why\AppData\Local\Microsoft\WindowsApps;C:\Users\why\AppData\Local\BypassRuntm;C:\Users\why\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\why\AppData\Roaming\npm;D:\softapp\daily\bandizip\;.]
+2020-04-02 22:48:19 o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-04-02 22:48:19 o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2209 ms
+2020-04-02 22:48:20 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-04-02 22:48:20 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'tracingFilter' to: [/*]
+2020-04-02 22:48:20 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2020-04-02 22:48:20 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-04-02 22:48:20 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-04-02 22:48:20 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-04-02 22:48:20 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2020-04-02 22:48:20 o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2020-04-02 22:48:20 o.s.b.w.s.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+2020-04-02 22:48:21 c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-04-02 22:48:21 c.a.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-04-02 22:48:21 org.redisson.Version - Redisson 3.11.2
+2020-04-02 22:48:22 o.r.c.p.MasterPubSubConnectionPool - 1 connections initialized for 192.168.140.130/192.168.140.130:6379
+2020-04-02 22:48:22 o.r.c.p.MasterConnectionPool - 24 connections initialized for 192.168.140.130/192.168.140.130:6379
+2020-04-02 22:48:22 c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-02 22:48:22 c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-02 22:48:22 o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-02 22:48:23 o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@210f0cc1: startup date [Thu Apr 02 22:48:17 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@68be8808
+2020-04-02 22:48:23 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test],methods=[GET]}" onto public java.lang.Object com.example.springservice.controller.RedissonLockTest.test()
+2020-04-02 22:48:23 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/add],methods=[POST]}" onto public int com.example.springservice.controller.UserController.addUser(com.example.springservice.model.UserDomain)
+2020-04-02 22:48:23 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addOrder],methods=[GET]}" onto public java.lang.Object com.example.springservice.controller.UserController.addOrder(com.example.springpublic.entity.OderAddParam)
+2020-04-02 22:48:23 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/findRedis]}" onto public java.lang.String com.example.springservice.controller.UserController.findRedis()
+2020-04-02 22:48:23 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addOrderDetil]}" onto public java.lang.String com.example.springservice.controller.UserController.addOrderDetil(com.example.springpublic.entity.OderAddParam)
+2020-04-02 22:48:23 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cleanRedis]}" onto public java.lang.String com.example.springservice.controller.UserController.cleanRedis()
+2020-04-02 22:48:23 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-04-02 22:48:23 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-04-02 22:48:23 o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-02 22:48:23 o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-02 22:48:26 o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-04-02 22:48:26 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2020-04-02 22:48:26 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-04-02 22:48:26 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-04-02 22:48:26 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-04-02 22:48:26 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-04-02 22:48:26 o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-04-02 22:48:26 o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-04-02 22:48:26 o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=210f0cc1,type=ConfigurationPropertiesRebinder]
+2020-04-02 22:48:26 o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2020-04-02 22:48:26 o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2020-04-02 22:48:26 o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+2020-04-02 22:48:26 o.s.c.n.e.InstanceInfoFactory - Setting initial instance status as: STARTING
+2020-04-02 22:48:26 c.n.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2020-04-02 22:48:27 c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2020-04-02 22:48:27 c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2020-04-02 22:48:27 c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2020-04-02 22:48:27 c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2020-04-02 22:48:27 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-02 22:48:27 c.n.discovery.DiscoveryClient - Disable delta property : false
+2020-04-02 22:48:27 c.n.discovery.DiscoveryClient - Single vip registry refresh property : null
+2020-04-02 22:48:27 c.n.discovery.DiscoveryClient - Force full registry fetch : false
+2020-04-02 22:48:27 c.n.discovery.DiscoveryClient - Application is null : false
+2020-04-02 22:48:27 c.n.discovery.DiscoveryClient - Registered Applications size is zero : true
+2020-04-02 22:48:27 c.n.discovery.DiscoveryClient - Application version is -1: true
+2020-04-02 22:48:27 c.n.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2020-04-02 22:48:27 c.n.discovery.DiscoveryClient - The response status is 200
+2020-04-02 22:48:27 c.n.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2020-04-02 22:48:27 c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-02 22:48:27 c.n.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1585838907958 with initial instances count: 1
+2020-04-02 22:48:27 o.s.c.n.e.s.EurekaServiceRegistry - Registering application springService with eureka with status UP
+2020-04-02 22:48:27 c.n.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1585838907971, current=UP, previous=STARTING]
+2020-04-02 22:48:27 c.n.discovery.DiscoveryClient - DiscoveryClient_SPRINGSERVICE/192.168.140.1:springService:8789: registering service...
+2020-04-02 22:48:27 o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483547
+2020-04-02 22:48:28 o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8789"]
+2020-04-02 22:48:28 o.a.t.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-04-02 22:48:28 c.n.discovery.DiscoveryClient - DiscoveryClient_SPRINGSERVICE/192.168.140.1:springService:8789 - registration status: 204
+2020-04-02 22:48:28 o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8789 (http) with context path ''
+2020-04-02 22:48:28 o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8789
+2020-04-02 22:48:28 c.e.s.SpringserviceApplication - Started SpringserviceApplication in 13.435 seconds (JVM running for 14.594)
+2020-04-02 22:50:13 o.a.c.c.C.[.[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-04-02 22:50:13 o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-04-02 22:50:13 o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2020-04-02 22:50:13 c.e.s.c.UserController - 进入redis查询
+2020-04-02 22:50:14 io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-04-02 22:50:14 io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-04-02 22:50:14 c.e.s.c.UserController - redis查询结束
+2020-04-02 22:50:17 c.e.s.c.UserController - 进入新增订单《《《《《《《《《《
+2020-04-02 22:50:17 c.e.s.c.UserController - 新增参数有误，请查证：{"cargoNum":"","price":0.0,"quantity":0,"userCode":""}
+2020-04-02 22:50:31 c.e.s.c.UserController - 进入新增订单《《《《《《《《《《
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 o.a.k.c.p.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [192.168.140.145:9092, 192.168.140.146:9092, 192.168.140.147:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2020-04-02 22:50:31 o.a.k.c.utils.AppInfoParser - Kafka version : 1.0.2
+2020-04-02 22:50:31 o.a.k.c.utils.AppInfoParser - Kafka commitId : 2a121f7b1d402825
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.c.UserController - 进入redis查询
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.c.UserController - redis查询结束
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:31 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 22:50:32 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 22:50:32 c.e.s.c.UserController - 进入redis查询
+2020-04-02 22:50:32 c.e.s.c.UserController - redis查询结束
+2020-04-02 22:53:27 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-02 22:58:27 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-02 23:02:19 o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68be8808: startup date [Thu Apr 02 23:02:19 CST 2020]; root of context hierarchy
+2020-04-02 23:02:19 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-02 23:02:19 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4a3f7ad8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 23:02:20 c.e.s.SpringserviceApplication - No active profile set, falling back to default profiles: default
+2020-04-02 23:02:20 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@210f0cc1: startup date [Thu Apr 02 23:02:20 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@68be8808
+2020-04-02 23:02:21 o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-02 23:02:21 o.s.c.c.scope.GenericScope - BeanFactory id=0d3f4bb3-b367-3247-8de2-c32bbf8fcca3
+2020-04-02 23:02:21 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-02 23:02:21 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$1d7895e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 23:02:22 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2e2577db] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 23:02:22 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4a3f7ad8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 23:02:22 o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8789 (http)
+2020-04-02 23:02:22 o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8789"]
+2020-04-02 23:02:22 o.a.c.core.StandardService - Starting service [Tomcat]
+2020-04-02 23:02:22 o.a.c.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2020-04-02 23:02:22 o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\soft\Java8\Java8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\softapp\develop\Xshell6\Xlpd 6\;D:\softapp\develop\Xshell6\Xftp 6\;D:\softapp\develop\Xshell6\Xshell 6\;D:\softapp\develop\Xshell6\Xmanager 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\softapp\develop\Git\cmd;D:\softapp\develop\node\;E:\allSoft\develop\mysql-5.6.46-winx64\bin;C:\Users\why\AppData\Local\Microsoft\WindowsApps;C:\Users\why\AppData\Local\BypassRuntm;C:\Users\why\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\why\AppData\Roaming\npm;D:\softapp\daily\bandizip\;.]
+2020-04-02 23:02:23 o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-04-02 23:02:23 o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2338 ms
+2020-04-02 23:02:23 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-04-02 23:02:23 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'tracingFilter' to: [/*]
+2020-04-02 23:02:23 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2020-04-02 23:02:23 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-04-02 23:02:23 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-04-02 23:02:23 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-04-02 23:02:23 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2020-04-02 23:02:23 o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2020-04-02 23:02:23 o.s.b.w.s.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+2020-04-02 23:02:24 c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-04-02 23:02:24 c.a.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-04-02 23:02:25 org.redisson.Version - Redisson 3.11.2
+2020-04-02 23:02:25 o.r.c.p.MasterPubSubConnectionPool - 1 connections initialized for 192.168.140.130/192.168.140.130:6379
+2020-04-02 23:02:25 o.r.c.p.MasterConnectionPool - 24 connections initialized for 192.168.140.130/192.168.140.130:6379
+2020-04-02 23:02:25 c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-02 23:02:26 c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-02 23:02:26 o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-02 23:02:26 o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@210f0cc1: startup date [Thu Apr 02 23:02:20 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@68be8808
+2020-04-02 23:02:26 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test],methods=[GET]}" onto public java.lang.Object com.example.springservice.controller.RedissonLockTest.test()
+2020-04-02 23:02:26 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addOrderDetil]}" onto public java.lang.String com.example.springservice.controller.UserController.addOrderDetil(com.example.springpublic.entity.OderAddParam)
+2020-04-02 23:02:26 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/findRedis]}" onto public java.lang.String com.example.springservice.controller.UserController.findRedis()
+2020-04-02 23:02:26 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cleanRedis]}" onto public java.lang.String com.example.springservice.controller.UserController.cleanRedis()
+2020-04-02 23:02:26 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/add],methods=[POST]}" onto public int com.example.springservice.controller.UserController.addUser(com.example.springservice.model.UserDomain)
+2020-04-02 23:02:26 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addOrder],methods=[GET]}" onto public java.lang.Object com.example.springservice.controller.UserController.addOrder(com.example.springpublic.entity.OderAddParam)
+2020-04-02 23:02:26 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-04-02 23:02:26 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-04-02 23:02:26 o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-02 23:02:26 o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-02 23:02:30 o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-04-02 23:02:30 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2020-04-02 23:02:30 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-04-02 23:02:30 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-04-02 23:02:30 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-04-02 23:02:30 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-04-02 23:02:30 o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-04-02 23:02:30 o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-04-02 23:02:30 o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=210f0cc1,type=ConfigurationPropertiesRebinder]
+2020-04-02 23:02:30 o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2020-04-02 23:02:30 o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2020-04-02 23:02:30 o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+2020-04-02 23:02:30 o.s.c.n.e.InstanceInfoFactory - Setting initial instance status as: STARTING
+2020-04-02 23:02:30 c.n.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2020-04-02 23:02:30 c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2020-04-02 23:02:30 c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2020-04-02 23:02:30 c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2020-04-02 23:02:30 c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2020-04-02 23:02:31 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-02 23:02:31 c.n.discovery.DiscoveryClient - Disable delta property : false
+2020-04-02 23:02:31 c.n.discovery.DiscoveryClient - Single vip registry refresh property : null
+2020-04-02 23:02:31 c.n.discovery.DiscoveryClient - Force full registry fetch : false
+2020-04-02 23:02:31 c.n.discovery.DiscoveryClient - Application is null : false
+2020-04-02 23:02:31 c.n.discovery.DiscoveryClient - Registered Applications size is zero : true
+2020-04-02 23:02:31 c.n.discovery.DiscoveryClient - Application version is -1: true
+2020-04-02 23:02:31 c.n.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2020-04-02 23:02:31 c.n.discovery.DiscoveryClient - The response status is 200
+2020-04-02 23:02:31 c.n.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2020-04-02 23:02:31 c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-02 23:02:31 c.n.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1585839751490 with initial instances count: 2
+2020-04-02 23:02:31 o.s.c.n.e.s.EurekaServiceRegistry - Registering application springService with eureka with status UP
+2020-04-02 23:02:31 c.n.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1585839751506, current=UP, previous=STARTING]
+2020-04-02 23:02:31 c.n.discovery.DiscoveryClient - DiscoveryClient_SPRINGSERVICE/192.168.140.1:springService:8789: registering service...
+2020-04-02 23:02:31 o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483547
+2020-04-02 23:02:31 o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8789"]
+2020-04-02 23:02:31 o.a.t.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-04-02 23:02:31 c.n.discovery.DiscoveryClient - DiscoveryClient_SPRINGSERVICE/192.168.140.1:springService:8789 - registration status: 204
+2020-04-02 23:02:31 o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8789 (http) with context path ''
+2020-04-02 23:02:31 o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8789
+2020-04-02 23:02:31 c.e.s.SpringserviceApplication - Started SpringserviceApplication in 14.065 seconds (JVM running for 15.315)
+2020-04-02 23:03:28 o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@906d29b: startup date [Thu Apr 02 23:03:28 CST 2020]; root of context hierarchy
+2020-04-02 23:03:28 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-02 23:03:28 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2e0678b7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 23:03:29 c.e.s.SpringserviceApplication - No active profile set, falling back to default profiles: default
+2020-04-02 23:03:29 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c383e33: startup date [Thu Apr 02 23:03:29 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@906d29b
+2020-04-02 23:03:29 o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-02 23:03:30 o.s.c.c.scope.GenericScope - BeanFactory id=0d3f4bb3-b367-3247-8de2-c32bbf8fcca3
+2020-04-02 23:03:30 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-02 23:03:30 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$e59e873d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 23:03:30 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$11ec75ba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 23:03:30 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2e0678b7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 23:03:31 o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8789 (http)
+2020-04-02 23:03:31 o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8789"]
+2020-04-02 23:03:31 o.a.c.core.StandardService - Starting service [Tomcat]
+2020-04-02 23:03:31 o.a.c.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2020-04-02 23:03:31 o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\soft\Java8\Java8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\softapp\develop\Xshell6\Xlpd 6\;D:\softapp\develop\Xshell6\Xftp 6\;D:\softapp\develop\Xshell6\Xshell 6\;D:\softapp\develop\Xshell6\Xmanager 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\softapp\develop\Git\cmd;D:\softapp\develop\node\;E:\allSoft\develop\mysql-5.6.46-winx64\bin;C:\Users\why\AppData\Local\Microsoft\WindowsApps;C:\Users\why\AppData\Local\BypassRuntm;C:\Users\why\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\why\AppData\Roaming\npm;D:\softapp\daily\bandizip\;.]
+2020-04-02 23:03:31 o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-04-02 23:03:31 o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2213 ms
+2020-04-02 23:03:32 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-04-02 23:03:32 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'tracingFilter' to: [/*]
+2020-04-02 23:03:32 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2020-04-02 23:03:32 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-04-02 23:03:32 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-04-02 23:03:32 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-04-02 23:03:32 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2020-04-02 23:03:32 o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2020-04-02 23:03:32 o.s.b.w.s.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+2020-04-02 23:03:32 c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-04-02 23:03:33 c.a.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-04-02 23:03:33 org.redisson.Version - Redisson 3.11.2
+2020-04-02 23:03:34 o.r.c.p.MasterPubSubConnectionPool - 1 connections initialized for 192.168.140.130/192.168.140.130:6379
+2020-04-02 23:03:34 o.r.c.p.MasterConnectionPool - 24 connections initialized for 192.168.140.130/192.168.140.130:6379
+2020-04-02 23:03:34 c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-02 23:03:34 c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-02 23:03:34 o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-02 23:03:34 o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c383e33: startup date [Thu Apr 02 23:03:29 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@906d29b
+2020-04-02 23:03:35 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test],methods=[GET]}" onto public java.lang.Object com.example.springservice.controller.RedissonLockTest.test()
+2020-04-02 23:03:35 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/findRedis]}" onto public java.lang.String com.example.springservice.controller.UserController.findRedis()
+2020-04-02 23:03:35 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/add],methods=[POST]}" onto public int com.example.springservice.controller.UserController.addUser(com.example.springservice.model.UserDomain)
+2020-04-02 23:03:35 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addOrderDetil]}" onto public java.lang.String com.example.springservice.controller.UserController.addOrderDetil(com.example.springpublic.entity.OderAddParam)
+2020-04-02 23:03:35 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cleanRedis]}" onto public java.lang.String com.example.springservice.controller.UserController.cleanRedis()
+2020-04-02 23:03:35 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addOrder],methods=[GET]}" onto public java.lang.Object com.example.springservice.controller.UserController.addOrder(com.example.springpublic.entity.OderAddParam)
+2020-04-02 23:03:35 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-04-02 23:03:35 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-04-02 23:03:35 o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-02 23:03:35 o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-02 23:03:38 o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-04-02 23:03:38 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2020-04-02 23:03:38 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-04-02 23:03:38 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-04-02 23:03:38 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-04-02 23:03:38 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-04-02 23:03:38 o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-04-02 23:03:38 o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-04-02 23:03:38 o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=2c383e33,type=ConfigurationPropertiesRebinder]
+2020-04-02 23:03:38 o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2020-04-02 23:03:38 o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2020-04-02 23:03:38 o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+2020-04-02 23:03:38 o.s.c.n.e.InstanceInfoFactory - Setting initial instance status as: STARTING
+2020-04-02 23:03:38 c.n.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2020-04-02 23:03:38 c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2020-04-02 23:03:38 c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2020-04-02 23:03:38 c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2020-04-02 23:03:38 c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2020-04-02 23:03:39 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-02 23:03:39 c.n.discovery.DiscoveryClient - Disable delta property : false
+2020-04-02 23:03:39 c.n.discovery.DiscoveryClient - Single vip registry refresh property : null
+2020-04-02 23:03:39 c.n.discovery.DiscoveryClient - Force full registry fetch : false
+2020-04-02 23:03:39 c.n.discovery.DiscoveryClient - Application is null : false
+2020-04-02 23:03:39 c.n.discovery.DiscoveryClient - Registered Applications size is zero : true
+2020-04-02 23:03:39 c.n.discovery.DiscoveryClient - Application version is -1: true
+2020-04-02 23:03:39 c.n.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2020-04-02 23:03:39 c.n.discovery.DiscoveryClient - The response status is 200
+2020-04-02 23:03:39 c.n.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2020-04-02 23:03:39 c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-02 23:03:39 c.n.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1585839819540 with initial instances count: 2
+2020-04-02 23:03:39 o.s.c.n.e.s.EurekaServiceRegistry - Registering application springService with eureka with status UP
+2020-04-02 23:03:39 c.n.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1585839819551, current=UP, previous=STARTING]
+2020-04-02 23:03:39 c.n.discovery.DiscoveryClient - DiscoveryClient_SPRINGSERVICE/192.168.140.1:springService:8789: registering service...
+2020-04-02 23:03:39 o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483547
+2020-04-02 23:03:39 o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8789"]
+2020-04-02 23:03:39 o.a.t.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-04-02 23:03:39 c.n.discovery.DiscoveryClient - DiscoveryClient_SPRINGSERVICE/192.168.140.1:springService:8789 - registration status: 204
+2020-04-02 23:03:39 o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8789 (http) with context path ''
+2020-04-02 23:03:39 o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8789
+2020-04-02 23:03:39 c.e.s.SpringserviceApplication - Started SpringserviceApplication in 13.405 seconds (JVM running for 14.581)
+2020-04-02 23:05:35 o.a.c.c.C.[.[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-04-02 23:05:35 o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-04-02 23:05:35 o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2020-04-02 23:05:35 c.e.s.c.UserController - 进入redis查询
+2020-04-02 23:05:35 io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-04-02 23:05:35 io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-04-02 23:05:35 c.e.s.c.UserController - redis查询结束
+2020-04-02 23:05:36 c.e.s.c.UserController - 进入redis查询
+2020-04-02 23:05:36 c.e.s.c.UserController - redis查询结束
+2020-04-02 23:05:40 c.e.s.c.UserController - 进入redis查询
+2020-04-02 23:05:40 c.e.s.c.UserController - redis查询结束
+2020-04-02 23:05:41 c.e.s.c.UserController - 开始clean
+2020-04-02 23:05:41 c.e.s.c.UserController - 结束clean
+2020-04-02 23:05:50 c.e.s.c.UserController - 进入新增订单《《《《《《《《《《
+2020-04-02 23:05:51 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 23:05:51 o.a.k.c.p.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [192.168.140.145:9092, 192.168.140.146:9092, 192.168.140.147:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2020-04-02 23:05:51 o.a.k.c.utils.AppInfoParser - Kafka version : 1.0.2
+2020-04-02 23:05:51 o.a.k.c.utils.AppInfoParser - Kafka commitId : 2a121f7b1d402825
+2020-04-02 23:06:51 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 23:08:39 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-02 23:13:39 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-02 23:16:08 o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1b73be9f: startup date [Thu Apr 02 23:16:08 CST 2020]; root of context hierarchy
+2020-04-02 23:16:09 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-02 23:16:09 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6d67be07] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 23:16:09 c.e.s.SpringserviceApplication - No active profile set, falling back to default profiles: default
+2020-04-02 23:16:09 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1500e009: startup date [Thu Apr 02 23:16:09 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1b73be9f
+2020-04-02 23:16:10 o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-02 23:16:10 o.s.c.c.scope.GenericScope - BeanFactory id=cb936a88-7e6b-3e4c-b615-e96bd8841fe7
+2020-04-02 23:16:11 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-02 23:16:11 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$24ffcc8d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 23:16:11 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$514dbb0a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 23:16:11 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6d67be07] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 23:16:11 o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8789 (http)
+2020-04-02 23:16:11 o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8789"]
+2020-04-02 23:16:11 o.a.c.core.StandardService - Starting service [Tomcat]
+2020-04-02 23:16:11 o.a.c.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2020-04-02 23:16:11 o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\soft\Java8\Java8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\softapp\develop\Xshell6\Xlpd 6\;D:\softapp\develop\Xshell6\Xftp 6\;D:\softapp\develop\Xshell6\Xshell 6\;D:\softapp\develop\Xshell6\Xmanager 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\softapp\develop\Git\cmd;D:\softapp\develop\node\;E:\allSoft\develop\mysql-5.6.46-winx64\bin;C:\Users\why\AppData\Local\Microsoft\WindowsApps;C:\Users\why\AppData\Local\BypassRuntm;C:\Users\why\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\why\AppData\Roaming\npm;D:\softapp\daily\bandizip\;.]
+2020-04-02 23:16:12 o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-04-02 23:16:12 o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2232 ms
+2020-04-02 23:16:12 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-04-02 23:16:12 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'tracingFilter' to: [/*]
+2020-04-02 23:16:12 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2020-04-02 23:16:12 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-04-02 23:16:12 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-04-02 23:16:12 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-04-02 23:16:12 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2020-04-02 23:16:12 o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2020-04-02 23:16:12 o.s.b.w.s.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+2020-04-02 23:16:13 c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-04-02 23:16:13 c.a.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-04-02 23:16:14 org.redisson.Version - Redisson 3.11.2
+2020-04-02 23:16:14 o.r.c.p.MasterConnectionPool - 24 connections initialized for 192.168.140.130/192.168.140.130:6379
+2020-04-02 23:16:14 o.r.c.p.MasterPubSubConnectionPool - 1 connections initialized for 192.168.140.130/192.168.140.130:6379
+2020-04-02 23:16:15 c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-02 23:16:15 c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-02 23:16:15 o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-02 23:16:15 o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1500e009: startup date [Thu Apr 02 23:16:09 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1b73be9f
+2020-04-02 23:16:15 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test],methods=[GET]}" onto public java.lang.Object com.example.springservice.controller.RedissonLockTest.test()
+2020-04-02 23:16:15 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/add],methods=[POST]}" onto public int com.example.springservice.controller.UserController.addUser(com.example.springservice.model.UserDomain)
+2020-04-02 23:16:15 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/findRedis]}" onto public java.lang.String com.example.springservice.controller.UserController.findRedis()
+2020-04-02 23:16:15 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addOrderDetil]}" onto public java.lang.String com.example.springservice.controller.UserController.addOrderDetil(com.example.springpublic.entity.OderAddParam)
+2020-04-02 23:16:15 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addOrder],methods=[GET]}" onto public java.lang.Object com.example.springservice.controller.UserController.addOrder(com.example.springpublic.entity.OderAddParam)
+2020-04-02 23:16:15 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cleanRedis]}" onto public java.lang.String com.example.springservice.controller.UserController.cleanRedis()
+2020-04-02 23:16:15 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-04-02 23:16:15 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-04-02 23:16:15 o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-02 23:16:15 o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-02 23:16:18 o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-04-02 23:16:18 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2020-04-02 23:16:18 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-04-02 23:16:18 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-04-02 23:16:18 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-04-02 23:16:18 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-04-02 23:16:18 o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-04-02 23:16:18 o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-04-02 23:16:18 o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=1500e009,type=ConfigurationPropertiesRebinder]
+2020-04-02 23:16:18 o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2020-04-02 23:16:18 o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2020-04-02 23:16:18 o.s.a.framework.CglibAopProxy - Final method [protected final org.springframework.kafka.support.converter.RecordMessageConverter org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.getMessageConverter()] cannot get proxied via CGLIB: Calls to this method will NOT be routed to the target instance and might lead to NPEs against uninitialized fields in the proxy instance.
+2020-04-02 23:16:18 o.s.a.framework.CglibAopProxy - Final method [protected final java.lang.Object org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(java.lang.Object,org.springframework.kafka.support.Acknowledgment,org.springframework.messaging.Message,org.apache.kafka.clients.consumer.Consumer)] cannot get proxied via CGLIB: Calls to this method will NOT be routed to the target instance and might lead to NPEs against uninitialized fields in the proxy instance.
+2020-04-02 23:16:18 o.s.a.framework.CglibAopProxy - Final method [protected final java.lang.String org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.createMessagingErrorMessage(java.lang.String,java.lang.Object)] cannot get proxied via CGLIB: Calls to this method will NOT be routed to the target instance and might lead to NPEs against uninitialized fields in the proxy instance.
+2020-04-02 23:16:18 o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+2020-04-02 23:16:18 o.s.c.n.e.InstanceInfoFactory - Setting initial instance status as: STARTING
+2020-04-02 23:16:18 c.n.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2020-04-02 23:16:19 c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2020-04-02 23:16:19 c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2020-04-02 23:16:19 c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2020-04-02 23:16:19 c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2020-04-02 23:16:19 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-02 23:16:20 c.n.discovery.DiscoveryClient - Disable delta property : false
+2020-04-02 23:16:20 c.n.discovery.DiscoveryClient - Single vip registry refresh property : null
+2020-04-02 23:16:20 c.n.discovery.DiscoveryClient - Force full registry fetch : false
+2020-04-02 23:16:20 c.n.discovery.DiscoveryClient - Application is null : false
+2020-04-02 23:16:20 c.n.discovery.DiscoveryClient - Registered Applications size is zero : true
+2020-04-02 23:16:20 c.n.discovery.DiscoveryClient - Application version is -1: true
+2020-04-02 23:16:20 c.n.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2020-04-02 23:16:20 c.n.discovery.DiscoveryClient - The response status is 200
+2020-04-02 23:16:20 c.n.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2020-04-02 23:16:20 c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-02 23:16:20 c.n.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1585840580198 with initial instances count: 2
+2020-04-02 23:16:20 o.s.c.n.e.s.EurekaServiceRegistry - Registering application springService with eureka with status UP
+2020-04-02 23:16:20 c.n.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1585840580210, current=UP, previous=STARTING]
+2020-04-02 23:16:20 c.n.discovery.DiscoveryClient - DiscoveryClient_SPRINGSERVICE/192.168.140.1:springService:8789: registering service...
+2020-04-02 23:16:20 o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483547
+2020-04-02 23:16:20 c.n.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2020-04-02 23:16:20 c.n.discovery.DiscoveryClient - DiscoveryClient_SPRINGSERVICE/192.168.140.1:springService:8789 - registration status: 204
+2020-04-02 23:16:20 c.n.discovery.DiscoveryClient - Unregistering ...
+2020-04-02 23:16:20 c.n.discovery.DiscoveryClient - DiscoveryClient_SPRINGSERVICE/192.168.140.1:springService:8789 - deregister  status: 200
+2020-04-02 23:16:20 c.n.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2020-04-02 23:16:20 o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2020-04-02 23:16:20 o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2020-04-02 23:16:20 c.a.druid.pool.DruidDataSource - {dataSource-1} closed
+2020-04-02 23:16:20 o.s.c.a.AnnotationConfigApplicationContext - Refreshing SpringClientFactory-localhost: startup date [Thu Apr 02 23:16:20 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1500e009
+2020-04-02 23:16:20 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-02 23:16:20 o.a.c.core.StandardService - Stopping service [Tomcat]
+2020-04-02 23:22:02 o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@63a270c9: startup date [Thu Apr 02 23:22:02 CST 2020]; root of context hierarchy
+2020-04-02 23:22:02 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-02 23:22:02 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ce042f36] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 23:22:03 c.e.s.SpringserviceApplication - No active profile set, falling back to default profiles: default
+2020-04-02 23:22:03 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@c7a977f: startup date [Thu Apr 02 23:22:03 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@63a270c9
+2020-04-02 23:22:04 o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-02 23:22:04 o.s.c.c.scope.GenericScope - BeanFactory id=cb936a88-7e6b-3e4c-b615-e96bd8841fe7
+2020-04-02 23:22:04 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-02 23:22:04 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$859c3dbc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 23:22:04 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b1ea2c39] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 23:22:05 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ce042f36] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 23:22:05 o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8789 (http)
+2020-04-02 23:22:05 o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8789"]
+2020-04-02 23:22:05 o.a.c.core.StandardService - Starting service [Tomcat]
+2020-04-02 23:22:05 o.a.c.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2020-04-02 23:22:05 o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\soft\Java8\Java8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\softapp\develop\Xshell6\Xlpd 6\;D:\softapp\develop\Xshell6\Xftp 6\;D:\softapp\develop\Xshell6\Xshell 6\;D:\softapp\develop\Xshell6\Xmanager 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\softapp\develop\Git\cmd;D:\softapp\develop\node\;E:\allSoft\develop\mysql-5.6.46-winx64\bin;C:\Users\why\AppData\Local\Microsoft\WindowsApps;C:\Users\why\AppData\Local\BypassRuntm;C:\Users\why\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\why\AppData\Roaming\npm;D:\softapp\daily\bandizip\;.]
+2020-04-02 23:22:05 o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-04-02 23:22:05 o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2210 ms
+2020-04-02 23:22:06 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-04-02 23:22:06 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'tracingFilter' to: [/*]
+2020-04-02 23:22:06 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2020-04-02 23:22:06 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-04-02 23:22:06 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-04-02 23:22:06 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-04-02 23:22:06 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2020-04-02 23:22:06 o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2020-04-02 23:22:06 o.s.b.w.s.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+2020-04-02 23:22:06 c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-04-02 23:22:07 c.a.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-04-02 23:22:07 org.redisson.Version - Redisson 3.11.2
+2020-04-02 23:22:08 o.r.c.p.MasterConnectionPool - 24 connections initialized for 192.168.140.130/192.168.140.130:6379
+2020-04-02 23:22:08 o.r.c.p.MasterPubSubConnectionPool - 1 connections initialized for 192.168.140.130/192.168.140.130:6379
+2020-04-02 23:22:08 c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-02 23:22:08 c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-02 23:22:08 o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-02 23:22:09 o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@c7a977f: startup date [Thu Apr 02 23:22:03 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@63a270c9
+2020-04-02 23:22:09 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test],methods=[GET]}" onto public java.lang.Object com.example.springservice.controller.RedissonLockTest.test()
+2020-04-02 23:22:09 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/add],methods=[POST]}" onto public int com.example.springservice.controller.UserController.addUser(com.example.springservice.model.UserDomain)
+2020-04-02 23:22:09 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cleanRedis]}" onto public java.lang.String com.example.springservice.controller.UserController.cleanRedis()
+2020-04-02 23:22:09 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/findRedis]}" onto public java.lang.String com.example.springservice.controller.UserController.findRedis()
+2020-04-02 23:22:09 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addOrder],methods=[GET]}" onto public java.lang.Object com.example.springservice.controller.UserController.addOrder(com.example.springpublic.entity.OderAddParam)
+2020-04-02 23:22:09 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addOrderDetil]}" onto public java.lang.String com.example.springservice.controller.UserController.addOrderDetil(com.example.springpublic.entity.OderAddParam)
+2020-04-02 23:22:09 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-04-02 23:22:09 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-04-02 23:22:09 o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-02 23:22:09 o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-02 23:22:12 o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-04-02 23:22:12 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2020-04-02 23:22:12 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-04-02 23:22:12 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-04-02 23:22:12 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-04-02 23:22:12 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-04-02 23:22:12 o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-04-02 23:22:12 o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-04-02 23:22:12 o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=c7a977f,type=ConfigurationPropertiesRebinder]
+2020-04-02 23:22:12 o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2020-04-02 23:22:12 o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2020-04-02 23:22:12 o.s.a.framework.CglibAopProxy - Final method [protected final org.springframework.kafka.support.converter.RecordMessageConverter org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.getMessageConverter()] cannot get proxied via CGLIB: Calls to this method will NOT be routed to the target instance and might lead to NPEs against uninitialized fields in the proxy instance.
+2020-04-02 23:22:12 o.s.a.framework.CglibAopProxy - Final method [protected final java.lang.Object org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(java.lang.Object,org.springframework.kafka.support.Acknowledgment,org.springframework.messaging.Message,org.apache.kafka.clients.consumer.Consumer)] cannot get proxied via CGLIB: Calls to this method will NOT be routed to the target instance and might lead to NPEs against uninitialized fields in the proxy instance.
+2020-04-02 23:22:12 o.s.a.framework.CglibAopProxy - Final method [protected final java.lang.String org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.createMessagingErrorMessage(java.lang.String,java.lang.Object)] cannot get proxied via CGLIB: Calls to this method will NOT be routed to the target instance and might lead to NPEs against uninitialized fields in the proxy instance.
+2020-04-02 23:22:12 o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+2020-04-02 23:22:12 o.s.c.n.e.InstanceInfoFactory - Setting initial instance status as: STARTING
+2020-04-02 23:22:12 c.n.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2020-04-02 23:22:13 c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2020-04-02 23:22:13 c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2020-04-02 23:22:13 c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2020-04-02 23:22:13 c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2020-04-02 23:22:13 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-02 23:22:13 c.n.discovery.DiscoveryClient - Disable delta property : false
+2020-04-02 23:22:13 c.n.discovery.DiscoveryClient - Single vip registry refresh property : null
+2020-04-02 23:22:13 c.n.discovery.DiscoveryClient - Force full registry fetch : false
+2020-04-02 23:22:13 c.n.discovery.DiscoveryClient - Application is null : false
+2020-04-02 23:22:13 c.n.discovery.DiscoveryClient - Registered Applications size is zero : true
+2020-04-02 23:22:13 c.n.discovery.DiscoveryClient - Application version is -1: true
+2020-04-02 23:22:13 c.n.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2020-04-02 23:22:13 c.n.discovery.DiscoveryClient - The response status is 200
+2020-04-02 23:22:13 c.n.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2020-04-02 23:22:13 c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-02 23:22:13 c.n.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1585840933889 with initial instances count: 1
+2020-04-02 23:22:13 o.s.c.n.e.s.EurekaServiceRegistry - Registering application springService with eureka with status UP
+2020-04-02 23:22:13 c.n.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1585840933902, current=UP, previous=STARTING]
+2020-04-02 23:22:13 c.n.discovery.DiscoveryClient - DiscoveryClient_SPRINGSERVICE/192.168.140.1:springService:8789: registering service...
+2020-04-02 23:22:13 o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483547
+2020-04-02 23:22:13 o.a.k.c.c.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.140.145:9092, 192.168.140.146:9092, 192.168.140.147:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = orderTestGroupid
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2020-04-02 23:22:13 c.n.discovery.DiscoveryClient - DiscoveryClient_SPRINGSERVICE/192.168.140.1:springService:8789 - registration status: 204
+2020-04-02 23:22:13 o.a.k.c.utils.AppInfoParser - Kafka version : 1.0.2
+2020-04-02 23:22:13 o.a.k.c.utils.AppInfoParser - Kafka commitId : 2a121f7b1d402825
+2020-04-02 23:22:13 o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+2020-04-02 23:22:14 o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8789"]
+2020-04-02 23:22:14 o.a.t.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-04-02 23:22:14 o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8789 (http) with context path ''
+2020-04-02 23:22:14 o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8789
+2020-04-02 23:22:14 c.e.s.SpringserviceApplication - Started SpringserviceApplication in 13.668 seconds (JVM running for 14.846)
+2020-04-02 23:22:14 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux4:9092 (id: 2147483644 rack: null)
+2020-04-02 23:22:16 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux4:9092 (id: 2147483644 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-04-02 23:23:31 o.a.c.c.C.[.[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-04-02 23:23:31 o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-04-02 23:23:31 o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2020-04-02 23:23:31 c.e.s.c.UserController - 进入新增订单《《《《《《《《《《
+2020-04-02 23:23:32 io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-04-02 23:23:32 io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-04-02 23:23:32 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 23:23:32 o.a.k.c.p.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 1000
+	bootstrap.servers = [192.168.140.145:9092, 192.168.140.146:9092, 192.168.140.147:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2020-04-02 23:23:32 o.a.k.c.utils.AppInfoParser - Kafka version : 1.0.2
+2020-04-02 23:23:32 o.a.k.c.utils.AppInfoParser - Kafka commitId : 2a121f7b1d402825
+2020-04-02 23:23:32 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 23:24:02 c.e.s.c.UserController - 进入新增订单《《《《《《《《《《
+2020-04-02 23:24:02 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 23:24:02 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 23:24:04 c.e.s.c.UserController - 进入redis查询
+2020-04-02 23:24:04 c.e.s.c.UserController - redis查询结束
+2020-04-02 23:27:13 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-02 23:37:01 o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3700ec9c: startup date [Thu Apr 02 23:37:01 CST 2020]; root of context hierarchy
+2020-04-02 23:37:01 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-02 23:37:01 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4821541f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 23:37:02 c.e.s.SpringserviceApplication - No active profile set, falling back to default profiles: default
+2020-04-02 23:37:02 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@32fdec40: startup date [Thu Apr 02 23:37:02 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3700ec9c
+2020-04-02 23:37:03 o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-02 23:37:03 o.s.c.c.scope.GenericScope - BeanFactory id=cb936a88-7e6b-3e4c-b615-e96bd8841fe7
+2020-04-02 23:37:03 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-02 23:37:03 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$ffb962a5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 23:37:03 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2c075122] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 23:37:03 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4821541f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 23:37:04 o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8789 (http)
+2020-04-02 23:37:04 o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8789"]
+2020-04-02 23:37:04 o.a.c.core.StandardService - Starting service [Tomcat]
+2020-04-02 23:37:04 o.a.c.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2020-04-02 23:37:04 o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\soft\Java8\Java8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\softapp\develop\Xshell6\Xlpd 6\;D:\softapp\develop\Xshell6\Xftp 6\;D:\softapp\develop\Xshell6\Xshell 6\;D:\softapp\develop\Xshell6\Xmanager 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\softapp\develop\Git\cmd;D:\softapp\develop\node\;E:\allSoft\develop\mysql-5.6.46-winx64\bin;C:\Users\why\AppData\Local\Microsoft\WindowsApps;C:\Users\why\AppData\Local\BypassRuntm;C:\Users\why\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\why\AppData\Roaming\npm;D:\softapp\daily\bandizip\;.]
+2020-04-02 23:37:04 o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-04-02 23:37:04 o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2247 ms
+2020-04-02 23:37:05 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-04-02 23:37:05 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'tracingFilter' to: [/*]
+2020-04-02 23:37:05 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2020-04-02 23:37:05 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-04-02 23:37:05 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-04-02 23:37:05 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-04-02 23:37:05 o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2020-04-02 23:37:05 o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2020-04-02 23:37:05 o.s.b.w.s.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+2020-04-02 23:37:05 c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-04-02 23:37:06 c.a.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-04-02 23:37:06 org.redisson.Version - Redisson 3.11.2
+2020-04-02 23:37:07 o.r.c.p.MasterPubSubConnectionPool - 1 connections initialized for 192.168.140.130/192.168.140.130:6379
+2020-04-02 23:37:07 o.r.c.p.MasterConnectionPool - 24 connections initialized for 192.168.140.130/192.168.140.130:6379
+2020-04-02 23:37:07 c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-02 23:37:07 c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-02 23:37:07 o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-02 23:37:08 o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@32fdec40: startup date [Thu Apr 02 23:37:02 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3700ec9c
+2020-04-02 23:37:08 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test],methods=[GET]}" onto public java.lang.Object com.example.springservice.controller.RedissonLockTest.test()
+2020-04-02 23:37:08 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/add],methods=[POST]}" onto public int com.example.springservice.controller.UserController.addUser(com.example.springservice.model.UserDomain)
+2020-04-02 23:37:08 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/findRedis]}" onto public java.lang.String com.example.springservice.controller.UserController.findRedis()
+2020-04-02 23:37:08 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addOrder],methods=[GET]}" onto public java.lang.Object com.example.springservice.controller.UserController.addOrder(com.example.springpublic.entity.OderAddParam)
+2020-04-02 23:37:08 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addOrderDetil]}" onto public java.lang.String com.example.springservice.controller.UserController.addOrderDetil(com.example.springpublic.entity.OderAddParam)
+2020-04-02 23:37:08 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cleanRedis]}" onto public java.lang.String com.example.springservice.controller.UserController.cleanRedis()
+2020-04-02 23:37:08 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-04-02 23:37:08 o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-04-02 23:37:08 o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-02 23:37:08 o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-02 23:37:11 o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-04-02 23:37:11 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2020-04-02 23:37:11 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-04-02 23:37:11 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-04-02 23:37:11 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-04-02 23:37:11 o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-04-02 23:37:11 o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-04-02 23:37:11 o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-04-02 23:37:11 o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=32fdec40,type=ConfigurationPropertiesRebinder]
+2020-04-02 23:37:11 o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2020-04-02 23:37:11 o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2020-04-02 23:37:11 o.s.a.framework.CglibAopProxy - Final method [protected final org.springframework.kafka.support.converter.RecordMessageConverter org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.getMessageConverter()] cannot get proxied via CGLIB: Calls to this method will NOT be routed to the target instance and might lead to NPEs against uninitialized fields in the proxy instance.
+2020-04-02 23:37:11 o.s.a.framework.CglibAopProxy - Final method [protected final java.lang.Object org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(java.lang.Object,org.springframework.kafka.support.Acknowledgment,org.springframework.messaging.Message,org.apache.kafka.clients.consumer.Consumer)] cannot get proxied via CGLIB: Calls to this method will NOT be routed to the target instance and might lead to NPEs against uninitialized fields in the proxy instance.
+2020-04-02 23:37:11 o.s.a.framework.CglibAopProxy - Final method [protected final java.lang.String org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.createMessagingErrorMessage(java.lang.String,java.lang.Object)] cannot get proxied via CGLIB: Calls to this method will NOT be routed to the target instance and might lead to NPEs against uninitialized fields in the proxy instance.
+2020-04-02 23:37:11 o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+2020-04-02 23:37:11 o.s.c.n.e.InstanceInfoFactory - Setting initial instance status as: STARTING
+2020-04-02 23:37:11 c.n.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2020-04-02 23:37:12 c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2020-04-02 23:37:12 c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2020-04-02 23:37:12 c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2020-04-02 23:37:12 c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2020-04-02 23:37:12 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-02 23:37:12 c.n.discovery.DiscoveryClient - Disable delta property : false
+2020-04-02 23:37:12 c.n.discovery.DiscoveryClient - Single vip registry refresh property : null
+2020-04-02 23:37:12 c.n.discovery.DiscoveryClient - Force full registry fetch : false
+2020-04-02 23:37:12 c.n.discovery.DiscoveryClient - Application is null : false
+2020-04-02 23:37:12 c.n.discovery.DiscoveryClient - Registered Applications size is zero : true
+2020-04-02 23:37:12 c.n.discovery.DiscoveryClient - Application version is -1: true
+2020-04-02 23:37:12 c.n.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2020-04-02 23:37:12 c.n.discovery.DiscoveryClient - The response status is 200
+2020-04-02 23:37:12 c.n.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2020-04-02 23:37:12 c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-02 23:37:12 c.n.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1585841832870 with initial instances count: 2
+2020-04-02 23:37:12 o.s.c.n.e.s.EurekaServiceRegistry - Registering application springService with eureka with status UP
+2020-04-02 23:37:12 c.n.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1585841832883, current=UP, previous=STARTING]
+2020-04-02 23:37:12 c.n.discovery.DiscoveryClient - DiscoveryClient_SPRINGSERVICE/192.168.140.1:springService:8789: registering service...
+2020-04-02 23:37:12 o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483547
+2020-04-02 23:37:12 o.a.k.c.c.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.140.145:9092, 192.168.140.146:9092, 192.168.140.147:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = orderTestGroupid
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2020-04-02 23:37:12 c.n.discovery.DiscoveryClient - DiscoveryClient_SPRINGSERVICE/192.168.140.1:springService:8789 - registration status: 204
+2020-04-02 23:37:12 o.a.k.c.utils.AppInfoParser - Kafka version : 1.0.2
+2020-04-02 23:37:12 o.a.k.c.utils.AppInfoParser - Kafka commitId : 2a121f7b1d402825
+2020-04-02 23:37:12 o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+2020-04-02 23:37:13 o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8789"]
+2020-04-02 23:37:13 o.a.t.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-04-02 23:37:13 o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8789 (http) with context path ''
+2020-04-02 23:37:13 o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8789
+2020-04-02 23:37:13 c.e.s.SpringserviceApplication - Started SpringserviceApplication in 13.72 seconds (JVM running for 15.011)
+2020-04-02 23:37:13 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux4:9092 (id: 2147483644 rack: null)
+2020-04-02 23:37:13 o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Revoking previously assigned partitions []
+2020-04-02 23:37:13 o.s.k.l.KafkaMessageListenerContainer - partitions revoked: []
+2020-04-02 23:37:13 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] (Re-)joining group
+2020-04-02 23:37:16 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Successfully joined group with generation 1
+2020-04-02 23:37:16 o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Setting newly assigned partitions [order-213-0, order-213-1]
+2020-04-02 23:37:16 o.s.k.l.KafkaMessageListenerContainer - partitions assigned: [order-213-0, order-213-1]
+2020-04-02 23:38:50 o.a.c.c.C.[.[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-04-02 23:38:50 o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-04-02 23:38:50 o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2020-04-02 23:38:50 c.e.s.c.UserController - 进入新增订单《《《《《《《《《《
+2020-04-02 23:38:51 io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-04-02 23:38:51 io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-04-02 23:38:51 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-04-02 23:38:51 o.a.k.c.p.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 1000
+	bootstrap.servers = [192.168.140.145:9092, 192.168.140.146:9092, 192.168.140.147:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2020-04-02 23:38:51 o.a.k.c.utils.AppInfoParser - Kafka version : 1.0.2
+2020-04-02 23:38:51 o.a.k.c.utils.AppInfoParser - Kafka commitId : 2a121f7b1d402825
+2020-04-02 23:38:51 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-04-02 23:38:51 c.e.s.util.Kafkautils - kafka sendMessage success topic = order-213, data = {"cargoNum":"c1","orderTime":1585841931102,"orderid":"6e3f2b92-9f66-40c7-8321-cba7e8d11155","port":"8789","price":2000.0,"userCode":"z1"}
+2020-04-02 23:39:11 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux4:9092 (id: 2147483644 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-04-02 23:39:11 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux4:9092 (id: 2147483644 rack: null)
+2020-04-02 23:39:11 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux4:9092 (id: 2147483644 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-04-02 23:39:11 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux4:9092 (id: 2147483644 rack: null)
+2020-04-02 23:42:12 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-02 23:47:12 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-02 23:52:12 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-04-02 23:57:12 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration

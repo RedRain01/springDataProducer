@@ -1,0 +1,125 @@
+2020-09-07 00:00:15 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-09-07 00:05:05 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux4:9092 (id: 2147483644 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-09-07 00:05:05 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux4:9092 (id: 2147483644 rack: null)
+2020-09-07 00:05:07 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux4:9092 (id: 2147483644 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-09-07 00:05:07 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux3:9092 (id: 2147483645 rack: null)
+2020-09-07 00:05:15 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-09-07 00:05:33 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux3:9092 (id: 2147483645 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-09-07 00:05:33 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux2:9092 (id: 2147483646 rack: null)
+2020-09-07 00:05:36 o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Revoking previously assigned partitions [order-213-0, order-213-1]
+2020-09-07 00:05:36 o.s.k.l.KafkaMessageListenerContainer - partitions revoked: [order-213-0, order-213-1]
+2020-09-07 00:05:36 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] (Re-)joining group
+2020-09-07 00:05:39 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Successfully joined group with generation 20
+2020-09-07 00:05:40 o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Setting newly assigned partitions [order-213-0, order-213-1]
+2020-09-07 00:05:40 o.s.k.l.KafkaMessageListenerContainer - partitions assigned: [order-213-0, order-213-1]
+2020-09-07 00:05:40 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux2:9092 (id: 2147483646 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-09-07 00:09:25 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux2:9092 (id: 2147483646 rack: null)
+2020-09-07 00:09:25 o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Revoking previously assigned partitions [order-213-0, order-213-1]
+2020-09-07 00:09:25 o.s.k.l.KafkaMessageListenerContainer - partitions revoked: [order-213-0, order-213-1]
+2020-09-07 00:09:25 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] (Re-)joining group
+2020-09-07 00:09:25 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux2:9092 (id: 2147483646 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-09-07 00:09:25 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux2:9092 (id: 2147483646 rack: null)
+2020-09-07 00:09:25 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] (Re-)joining group
+2020-09-07 00:09:25 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux2:9092 (id: 2147483646 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-09-07 00:09:25 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux2:9092 (id: 2147483646 rack: null)
+2020-09-07 00:10:15 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-09-07 00:15:15 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-09-07 00:18:25 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux2:9092 (id: 2147483646 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-09-07 00:18:25 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux4:9092 (id: 2147483644 rack: null)
+2020-09-07 00:18:27 c.e.s.c.UserController - 进入新增订单《《《《《《《《《《
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage success topic = order-213, data = {"cargoNum":"c1","orderTime":1599409107194,"orderid":"13c54c7e-5d34-4b5e-8208-35b839b543a7","port":"8789","price":100.0,"userCode":"z1"}
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage success topic = order-213, data = {"cargoNum":"c1","orderTime":1599409107194,"orderid":"f23f3dbc-bea9-495c-a61c-343a631b769f","port":"8789","price":100.0,"userCode":"z1"}
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage success topic = order-213, data = {"cargoNum":"c1","orderTime":1599409107195,"orderid":"79022f31-cfa7-464a-8909-22108d8672de","port":"8789","price":100.0,"userCode":"z1"}
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage success topic = order-213, data = {"cargoNum":"c1","orderTime":1599409107195,"orderid":"2c20f232-baa6-432b-8b7c-3ff4d3052ab8","port":"8789","price":100.0,"userCode":"z1"}
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage success topic = order-213, data = {"cargoNum":"c1","orderTime":1599409107194,"orderid":"c43b769c-1de0-427b-9eb2-02aafd27ead6","port":"8789","price":100.0,"userCode":"z1"}
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage success topic = order-213, data = {"cargoNum":"c1","orderTime":1599409107194,"orderid":"81e32a30-ac82-4c1e-9021-9e8507ff8117","port":"8789","price":100.0,"userCode":"z1"}
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage success topic = order-213, data = {"cargoNum":"c1","orderTime":1599409107195,"orderid":"a1d22ac8-a991-4923-9356-b0e23723ea70","port":"8789","price":100.0,"userCode":"z1"}
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage success topic = order-213, data = {"cargoNum":"c1","orderTime":1599409107195,"orderid":"95efd17c-8702-4b14-b428-85f368f825b5","port":"8789","price":100.0,"userCode":"z1"}
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage success topic = order-213, data = {"cargoNum":"c1","orderTime":1599409107195,"orderid":"01d6b5e6-5ce6-442c-ae14-8cb1af3feb91","port":"8789","price":100.0,"userCode":"z1"}
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage start
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage end
+2020-09-07 00:18:27 c.e.s.util.Kafkautils - kafka sendMessage success topic = order-213, data = {"cargoNum":"c1","orderTime":1599409107195,"orderid":"22452a22-d825-4e13-943b-41883eeec704","port":"8789","price":100.0,"userCode":"z1"}
+2020-09-07 00:20:15 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-09-07 00:25:15 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-09-07 00:27:25 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux4:9092 (id: 2147483644 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-09-07 00:27:25 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux4:9092 (id: 2147483644 rack: null)
+2020-09-07 00:27:25 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux4:9092 (id: 2147483644 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-09-07 00:27:25 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux4:9092 (id: 2147483644 rack: null)
+2020-09-07 00:30:15 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-09-07 00:35:15 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-09-07 00:36:25 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux4:9092 (id: 2147483644 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-09-07 00:36:25 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux4:9092 (id: 2147483644 rack: null)
+2020-09-07 00:36:25 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux4:9092 (id: 2147483644 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-09-07 00:36:25 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux4:9092 (id: 2147483644 rack: null)
+2020-09-07 00:40:15 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-09-07 00:45:15 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-09-07 00:45:26 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux4:9092 (id: 2147483644 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-09-07 00:45:26 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux4:9092 (id: 2147483644 rack: null)
+2020-09-07 00:45:26 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux4:9092 (id: 2147483644 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-09-07 00:45:26 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux4:9092 (id: 2147483644 rack: null)
+2020-09-07 00:50:15 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-09-07 00:54:26 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux4:9092 (id: 2147483644 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-09-07 00:54:26 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux4:9092 (id: 2147483644 rack: null)
+2020-09-07 00:54:26 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux4:9092 (id: 2147483644 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-09-07 00:54:26 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux4:9092 (id: 2147483644 rack: null)
+2020-09-07 00:55:15 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-09-07 01:00:15 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-09-07 01:03:26 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux4:9092 (id: 2147483644 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-09-07 01:03:26 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux4:9092 (id: 2147483644 rack: null)
+2020-09-07 01:03:26 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux4:9092 (id: 2147483644 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-09-07 01:03:27 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux4:9092 (id: 2147483644 rack: null)
+2020-09-07 01:05:15 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-09-07 01:10:15 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-09-07 01:12:27 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux4:9092 (id: 2147483644 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-09-07 01:12:27 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux4:9092 (id: 2147483644 rack: null)
+2020-09-07 01:12:27 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux4:9092 (id: 2147483644 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-09-07 01:12:27 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux4:9092 (id: 2147483644 rack: null)
+2020-09-07 01:15:15 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-09-07 01:20:15 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-09-07 01:21:27 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux4:9092 (id: 2147483644 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-09-07 01:21:27 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux4:9092 (id: 2147483644 rack: null)
+2020-09-07 01:21:27 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux4:9092 (id: 2147483644 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-09-07 01:21:27 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux4:9092 (id: 2147483644 rack: null)
+2020-09-07 01:21:57 i.l.c.protocol.CommandHandler - [channel=0x50482e61, /192.168.140.1:56478 -> /192.168.140.130:6379, chid=0x1] Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1108)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:628)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:563)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:480)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:442)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-09-07 01:21:57 i.l.c.p.ConnectionWatchdog - Reconnecting, last destination was /192.168.140.130:6379
+2020-09-07 10:10:51 i.l.c.p.ConnectionWatchdog - Reconnecting, last destination was 192.168.140.130:6379
+2020-09-07 10:10:51 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Group coordinator linux4:9092 (id: 2147483644 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-09-07 10:10:59 i.l.c.p.ConnectionWatchdog - Reconnecting, last destination was 192.168.140.130:6379
+2020-09-07 10:10:59 i.l.c.p.ReconnectionHandler - Reconnected to 192.168.140.130:6379, Channel channel=0x9c34bad2, /192.168.140.1:60648 -> /192.168.140.130:6379
+2020-09-07 10:11:11 o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=orderTestGroupid] Discovered group coordinator linux4:9092 (id: 2147483644 rack: null)
+2020-09-07 10:14:03 c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
