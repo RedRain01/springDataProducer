@@ -161,5 +161,17 @@
 			<if test="orderFlag!=null and orderFlag!=''">AND order_flag = #{orderFlag,jdbcType=VARCHAR}</if>
 		</where>
 	</select>
+
+	<!-- 根据条件查询总数 -->
+	<select id="maxId" resultType="long">
+		SELECT MAX(t.id) from  `order` t
+	</select>
+
+
+	<!-- 根据端口 -->
+	<select id="allPort" resultType="java.lang.String">
+			SELECT DISTINCT order_flag  FROM `order`
+	</select>
+
 </mapper>
 

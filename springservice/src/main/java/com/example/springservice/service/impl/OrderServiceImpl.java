@@ -7,6 +7,7 @@ import com.example.springservice.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -37,6 +38,18 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
+    public long maxId() {
+        return  orderMapper.maxId();
+    }
+
+    @Override
+    public ArrayList<String> allPort() {
+        return  orderMapper.allPort();
+    }
+
+
+
+    @Override
     public int updateByPk(Order order) {
         return 0;
     }
@@ -60,4 +73,6 @@ public class OrderServiceImpl implements OrderService {
     public long countByCondtion(Map paramMap) {
         return 0;
     }
+
+
 }

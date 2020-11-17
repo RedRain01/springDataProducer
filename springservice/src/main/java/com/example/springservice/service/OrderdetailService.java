@@ -89,4 +89,9 @@ public interface OrderdetailService {
 	 */
 	@SuppressWarnings({"rawtypes" })
 	public long countByCondtion(java.util.Map paramMap);
+
+
+
+
+
 }

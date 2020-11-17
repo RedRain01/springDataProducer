@@ -27,8 +27,11 @@ public class RedissonLocker implements Locker {
         lock.lock();
     }
 
+
+
     @Override
     public void unlock(String lockKey) {
+        redissonClient.getSet(lockKey);
         RLock lock = redissonClient.getLock(lockKey);
         lock.unlock();
     }

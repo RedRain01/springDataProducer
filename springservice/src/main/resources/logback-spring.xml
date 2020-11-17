@@ -68,7 +68,7 @@
     </appender>
     <!-- 日志级别排序为： TRACE < DEBUG < INFO < WARN < ERROR -->
     <!-- 定义日志全局最低输出级别是INFO，同时向控制台和日滚动文件输出 -->
-    <root level="DEBUG">
+    <root level="INFO">
         <appender-ref ref="console" />
         <appender-ref ref="errorFile" />
         <appender-ref ref="infoFile" />

@@ -31,7 +31,7 @@ public class Myutil {
     public static  String getId(){
         return UUID.randomUUID().toString();
     }
-    //获取均匀随机班级
+    //获取均匀随机分区
     public static String getPartition(String string){
         if (StringUtils.isEmpty(string)) {
             Random random=new Random();
@@ -40,6 +40,19 @@ public class Myutil {
         }
       return string;
     }
+
+    //获取均匀随机商品
+    public static String getCommodity(String string){
+        String[] str={"c1","c2","c3","c4","c5","c6","c7"};
+        if (StringUtils.isEmpty(string)) {
+            Random random=new Random();
+            int num=random.nextInt(6);
+            return str[num];
+        }
+        return string;
+    }
+
+
 
     //生成均匀科目
     public static String getSubjec(){

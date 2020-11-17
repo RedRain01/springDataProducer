@@ -6,6 +6,7 @@ import com.alibaba.fastjson.JSON;
 import com.example.springpublic.entity.OderAddParam;
 import com.example.springpublic.entity.Orderdetail;
 import com.example.springservice.model.UserDomain;
+import com.example.springservice.service.OrderService;
 import com.example.springservice.service.OrderdetailService;
 import com.example.springservice.service.UserService;
 import com.example.springservice.util.Kafkautils;
@@ -18,6 +19,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.UUID;
 import java.util.concurrent.LinkedBlockingQueue;
@@ -42,6 +44,8 @@ public class UserController {
     @Autowired
     private OrderdetailService orderdetailService;
 
+    @Autowired
+    private OrderService orderService;
 
     @Autowired
     private RedisUtil redisUtil;
@@ -56,19 +60,19 @@ public class UserController {
 
     static final String KEY = "LOCK_KEY";
 
-    /*   @ResponseBody
-       @RequestMapping("/testRedis")
-       public Student test(@RequestBody Student student){
-           redisUtil.set("test","这只是一个测试");
-           Object test = redisUtil.get("test");
-           if (null != test) {
-               return test.toString();
-           }
-           return null;
-           student.setNaem("22222222-----------"+port);
-           return null;
-       }
-   */
+//    @ResponseBody
+//       @RequestMapping("/testRedis")
+//       public Student test(@RequestBody Student student){
+//           redisUtil.set("test","这只是一个测试");
+//           Object test = redisUtil.get("test");
+//           if (null != test) {
+//               return test.toString();
+//           }
+//           return null;
+//           student.setNaem("22222222-----------"+port);
+//           return null;
+//       }
+
     @ResponseBody
     @RequestMapping("/findRedis")
     public String findRedis() {
@@ -82,7 +86,7 @@ public class UserController {
             String portNum = "0";
             String fileNum = "0";
             Object allPort = redisUtil.get("allport");
-            Object portStr = redisUtil.get(port);
+            Object portStr = redisUtil.get(port+"port");
             Object filePort = redisUtil.get(port + "file");
             if (allPort != null) {
                 allNum = allPort.toString();
@@ -106,7 +110,10 @@ public class UserController {
     public String cleanRedis() {
         log.info("开始clean");
         try {
-            redisUtil.set(port, 0);
+            ArrayList<String> portList = orderService.allPort();
+            for (int i = 0; i <portList.size() ; i++) {
+                redisUtil.set(portList.get(i)+"port", 0);
+            }
             redisUtil.set("allport", 0);
             redisUtil.set(port + "file", 0);
             log.info("结束clean");

@@ -9,6 +9,8 @@ import com.example.springpublic.entity.Order;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+
 /**
  * Mapper.<p>
  * @author WillYang
@@ -87,4 +89,10 @@ public interface OrderService {
 	 */
 	@SuppressWarnings({"rawtypes" })
 	public long countByCondtion(java.util.Map paramMap);
+
+	public long maxId();
+
+	public ArrayList<String> allPort();
+
+
 }

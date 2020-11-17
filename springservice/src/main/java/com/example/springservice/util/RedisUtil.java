@@ -1,7 +1,12 @@
 package com.example.springservice.util;
 
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import com.fasterxml.jackson.annotation.PropertyAccessor;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
+import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
@@ -22,6 +27,9 @@ public final class RedisUtil {
 	private RedisTemplate<String, Object> redisTemplate;
 
 	// =============================common============================
+
+
+
 	/**
 	 * 指定缓存失效时间
 	 * @param key 键
@@ -87,6 +95,32 @@ public final class RedisUtil {
 	public Object get(String key) {
 		return key == null ? null : redisTemplate.opsForValue().get(key);
 	}
+
+	/**
+	 * retemplate相关配置
+	 *
+	 * @return
+	 */
+	public Object getJson(String key) {
+		//使用Jackson2JsonRedisSerializer来序列化和反序列化redis的value值（默认使用JDK的序列化方式）
+		Jackson2JsonRedisSerializer jacksonSeial = new Jackson2JsonRedisSerializer(Object.class);
+		ObjectMapper om = new ObjectMapper();
+		// 指定要序列化的域，field,get和set,以及修饰符范围，ANY是都有包括private和public
+		om.setVisibility(PropertyAccessor.ALL, JsonAutoDetect.Visibility.ANY);
+		// 指定序列化输入的类型，类必须是非final修饰的，final修饰的类，比如String,Integer等会跑出异常
+//        om.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL); // 保留这行会报错：Unexpected token (VALUE_STRING)
+		jacksonSeial.setObjectMapper(om);
+		// 值采用json序列化
+		redisTemplate.setValueSerializer(jacksonSeial);
+		//使用StringRedisSerializer来序列化和反序列化redis的key值
+		redisTemplate.setKeySerializer(new StringRedisSerializer());
+		// 设置hash key 和value序列化模式
+		redisTemplate.setHashKeySerializer(new StringRedisSerializer());
+		redisTemplate.setHashValueSerializer(jacksonSeial);
+		redisTemplate.afterPropertiesSet();
+		return key == null ? null : redisTemplate.opsForValue().get(key);
+	}
+
 
 	/**
 	 * 普通缓存放入

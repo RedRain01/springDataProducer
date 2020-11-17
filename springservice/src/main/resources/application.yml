@@ -3,7 +3,7 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8766/eureka/
 server:
-  port: 8784
+  port: 8783
 spring:
     datasource:
         name: mysql_test

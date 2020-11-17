@@ -8,6 +8,8 @@ package com.example.springservice.dao;
 import com.example.springpublic.entity.Order;
 import org.springframework.stereotype.Repository;
 
+import java.util.ArrayList;
+
 /**
  * Mapper.<p>
  * @author WillYang
@@ -84,4 +86,12 @@ public interface OrderMapper {
 	 */
 	@SuppressWarnings({"rawtypes" })
 	public long countByCondtion(java.util.Map paramMap);
+
+
+	public long maxId();
+
+	public ArrayList<String> allPort();
+
+
+
 }
