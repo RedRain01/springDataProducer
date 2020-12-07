@@ -1,2 +1,2 @@
 # springDataProducer
-学习flink的数据提供
+学习flink的数据提供，它是一个springcloud工程组，有注册中心，SpringGateWay网关，service。使用mybatisORM框架
