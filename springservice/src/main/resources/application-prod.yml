@@ -18,6 +18,9 @@ spring:
           url: jdbc:mysql://127.0.0.1:3306/whyt?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=UTC
           username: root
           password: root
+          #url: jdbc:mysql://192.168.140.146:3306/whyt?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=UTC
+          #username: root
+         # password: WHYwhy@@@123
           #配置初始化大小/最小/最大
           initial-size: 1
           min-idle: 1
@@ -39,7 +42,7 @@ spring:
       name: springService
     redis:
       database: 0
-      host: 192.168.85.128
+      host: 192.168.140.130
       port: 6379
       password:
       jedis:
@@ -50,7 +53,7 @@ spring:
           min-idle: 0
       timeout: 1000
     kafka:
-      bootstrap-servers: 192.168.85.128:9092
+      bootstrap-servers: 192.168.140.145:9092,192.168.140.146:9092,192.168.140.147:9092
       consumer:
         enable-auto-commit: false
         auto-commit-interval: 100ms

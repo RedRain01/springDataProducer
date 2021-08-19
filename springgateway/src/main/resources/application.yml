@@ -4,6 +4,7 @@ eureka:
       defaultZone: http://localhost:8766/eureka/
 server:
   port: 8200
+  connection-timeout: 20000
 
 spring:
   cloud:
@@ -18,7 +19,6 @@ spring:
     name: springGateWay
 stu-provide:
   ribbon:
-
     #    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule #配置规则 随机
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule #配置规则 轮询
     #    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RetryRule #配置规则 重试

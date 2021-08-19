@@ -60,19 +60,6 @@ public class UserController {
 
     static final String KEY = "LOCK_KEY";
 
-//    @ResponseBody
-//       @RequestMapping("/testRedis")
-//       public Student test(@RequestBody Student student){
-//           redisUtil.set("test","这只是一个测试");
-//           Object test = redisUtil.get("test");
-//           if (null != test) {
-//               return test.toString();
-//           }
-//           return null;
-//           student.setNaem("22222222-----------"+port);
-//           return null;
-//       }
-
     @ResponseBody
     @RequestMapping("/findRedis")
     public String findRedis() {
@@ -113,9 +100,9 @@ public class UserController {
             ArrayList<String> portList = orderService.allPort();
             for (int i = 0; i <portList.size() ; i++) {
                 redisUtil.set(portList.get(i)+"port", 0);
+                redisUtil.set(port + "file", 0);
             }
             redisUtil.set("allport", 0);
-            redisUtil.set(port + "file", 0);
             log.info("结束clean");
             return "成功";
         } catch (Exception e) {

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.example.springservice.dao.EventDao">
+
+	<!-- 结果Map -->
+	<resultMap id="BaseResultMap" type="com.example.springpublic.entity.Event">
+		<result property="eventId" jdbcType="INTEGER" column="event_id"/>
+		<result property="eventName" jdbcType="VARCHAR" column="event_name"/>
+		<result property="parentId" jdbcType="INTEGER" column="parent_id"/>
+		<result property="userCode" jdbcType="VARCHAR" column="user_code"/>
+		<result property="status" jdbcType="VARCHAR" column="status"/>
+		<result property="createTime" jdbcType="TIMESTAMP" column="create_time"/>
+		<result property="updateTime" jdbcType="TIMESTAMP" column="update_time"/>
+		<result property="type" jdbcType="VARCHAR" column="type"/>
+		<result property="sort" jdbcType="VARCHAR" column="sort"/>
+	</resultMap>
+	
+	<!-- 查询列 -->
+	<sql id="BaseColumnList">
+		event_id,event_name,parent_id,user_code,status,create_time,update_time,type,sort
+	</sql>
+				
+	<!--创建记录 -->
+	<insert id="create" parameterType="com.example.springpublic.entity.Event">
+		INSERT INTO event
+		<trim prefix="(" suffix=")" suffixOverrides="," >
+			 <if test="eventId!=null">event_id,</if>
+			 <if test="eventName!=null and eventName!=''">event_name,</if>
+			 <if test="parentId!=null">parent_id,</if>
+			 <if test="userCode!=null and userCode!=''">user_code,</if>
+			 <if test="status!=null and status!=''">status,</if>
+			 <if test="createTime!=null">create_time,</if>
+			 <if test="updateTime!=null">update_time,</if>
+			 <if test="type!=null and type!=''">type,</if>
+			 <if test="sort!=null and sort!=''">sort</if>
+		</trim>
+		<trim prefix="VALUES (" suffix=")" suffixOverrides="," >
+			<if test="eventId!=null">#{eventId,jdbcType=INTEGER},</if>
+			<if test="eventName!=null and eventName!=''">#{eventName,jdbcType=VARCHAR},</if>
+			<if test="parentId!=null">#{parentId,jdbcType=INTEGER},</if>
+			<if test="userCode!=null and userCode!=''">#{userCode,jdbcType=VARCHAR},</if>
+			<if test="status!=null and status!=''">#{status,jdbcType=VARCHAR},</if>
+			<if test="createTime!=null">#{createTime,jdbcType=TIMESTAMP},</if>
+			<if test="updateTime!=null">#{updateTime,jdbcType=TIMESTAMP},</if>
+			<if test="type!=null and type!=''">#{type,jdbcType=VARCHAR},</if>
+			<if test="sort!=null and sort!=''">#{sort,jdbcType=VARCHAR}</if>
+		</trim>
+	</insert>
+	
+	<!-- 更新记录 -->
+	<update id="updateByPk" parameterType="com.example.springpublic.entity.Event">
+		UPDATE event 
+		<set>
+            <trim suffixOverrides=",">
+    			<if test="eventName!=null and eventName!=''">event_name = #{eventName,jdbcType=VARCHAR},</if>
+    			<if test="parentId!=null">parent_id = #{parentId,jdbcType=INTEGER},</if>
+    			<if test="userCode!=null and userCode!=''">user_code = #{userCode,jdbcType=VARCHAR},</if>
+    			<if test="status!=null and status!=''">status = #{status,jdbcType=VARCHAR},</if>
+    			<if test="createTime!=null">create_time = #{createTime,jdbcType=TIMESTAMP},</if>
+    			<if test="updateTime!=null">update_time = #{updateTime,jdbcType=TIMESTAMP},</if>
+    			<if test="type!=null and type!=''">type = #{type,jdbcType=VARCHAR},</if>
+    			<if test="sort!=null and sort!=''">sort = #{sort,jdbcType=VARCHAR}</if>
+            </trim>
+		</set>
+		<where> 
+			 event_id = #{eventId,jdbcType=INTEGER} 
+		</where>				
+	</update>
+	
+	<!-- 根据主键查询记录 -->
+	<select id="queryByPk" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+		SELECT <include refid="BaseColumnList" />
+		FROM event
+		<where>
+            event_id = #{eventId,jdbcType=INTEGER} 
+        </where>	
+	</select>
+	
+	<!-- 根据主键删除记录 -->
+	<delete id="deleteByPk" parameterType="java.lang.Integer">
+		DELETE FROM event
+		<where> 
+            event_id = #{eventId,jdbcType=INTEGER} 
+        </where>
+	</delete>	
+	
+	<!-- 按对象查询 -->
+	<select id="queryByEvent" parameterType="com.example.springpublic.entity.Event" resultMap="BaseResultMap">
+		SELECT <include refid="BaseColumnList" />
+		FROM event 
+		<where>
+		1=1
+            <if test="eventId!=null">AND event_id = #{eventId,jdbcType=INTEGER}</if>
+			<if test="eventName!=null and eventName!=''">AND event_name = #{eventName,jdbcType=VARCHAR}</if>
+            <if test="parentId!=null">AND parent_id = #{parentId,jdbcType=INTEGER}</if>
+			<if test="userCode!=null and userCode!=''">AND user_code = #{userCode,jdbcType=VARCHAR}</if>
+			<if test="status!=null and status!=''">AND status = #{status,jdbcType=VARCHAR}</if>
+            <if test="createTime!=null">AND create_time = #{createTime,jdbcType=TIMESTAMP}</if>
+            <if test="updateTime!=null">AND update_time = #{updateTime,jdbcType=TIMESTAMP}</if>
+			<if test="type!=null and type!=''">AND type = #{type,jdbcType=VARCHAR}</if>
+			<if test="sort!=null and sort!=''">AND sort = #{sort,jdbcType=VARCHAR}</if>
+		</where>
+	</select>
+	
+	<sql id="pageHead">
+	   SELECT * FROM (
+	       SELECT ROWNUM AS RN, TM.* FROM (
+	   
+	</sql>
+	<sql id="pageTail">
+	   ) TM ) TMP
+	   <where>
+	       TMP.RN &gt; (${pageNum}-1)*${pageSize}
+	       AND TMP.RN &lt;= ${pageNum}*${pageSize}
+	   </where>
+	</sql>
+	<sql id="pageBody">
+	   SELECT <include refid="BaseColumnList"/>
+           FROM event
+           <where>
+                <if test="eventId!=null">AND event_id = #{eventId,jdbcType=INTEGER}</if>
+                <if test="eventName!=null and eventName!=''">AND event_name = #{eventName,jdbcType=VARCHAR}</if>
+                <if test="parentId!=null">AND parent_id = #{parentId,jdbcType=INTEGER}</if>
+                <if test="userCode!=null and userCode!=''">AND user_code = #{userCode,jdbcType=VARCHAR}</if>
+                <if test="status!=null and status!=''">AND status = #{status,jdbcType=VARCHAR}</if>
+                <if test="createTime!=null">AND create_time = #{createTime,jdbcType=TIMESTAMP}</if>
+                <if test="updateTime!=null">AND update_time = #{updateTime,jdbcType=TIMESTAMP}</if>
+                <if test="type!=null and type!=''">AND type = #{type,jdbcType=VARCHAR}</if>
+                <if test="sort!=null and sort!=''">AND sort = #{sort,jdbcType=VARCHAR}</if>
+           </where>
+	</sql>
+	
+	<!-- 根据条件分页 -->
+	<select id="queryByPage" parameterType="java.util.Map" resultMap="BaseResultMap">
+	   <include refid="pageHead"/>
+	       <include refid="pageBody"/>
+	   <include refid="pageTail"/>
+	</select>
+	
+	<!-- 根据条件查询总数 -->
+    <select id="countByCondtion" parameterType="java.util.Map" resultType="long">
+       SELECT COUNT(*) FROM event
+            <where>
+                1=1
+	            <if test="eventId!=null">AND event_id = #{eventId,jdbcType=INTEGER}</if>
+	            <if test="eventName!=null and eventName!=''">AND event_name = #{eventName,jdbcType=VARCHAR}</if>
+	            <if test="parentId!=null">AND parent_id = #{parentId,jdbcType=INTEGER}</if>
+	            <if test="userCode!=null and userCode!=''">AND user_code = #{userCode,jdbcType=VARCHAR}</if>
+	            <if test="status!=null and status!=''">AND status = #{status,jdbcType=VARCHAR}</if>
+	            <if test="createTime!=null">AND create_time = #{createTime,jdbcType=TIMESTAMP}</if>
+	            <if test="updateTime!=null">AND update_time = #{updateTime,jdbcType=TIMESTAMP}</if>
+	            <if test="type!=null and type!=''">AND type = #{type,jdbcType=VARCHAR}</if>
+	            <if test="sort!=null and sort!=''">AND sort = #{sort,jdbcType=VARCHAR}</if>
+            </where>
+    </select>
+</mapper>
+

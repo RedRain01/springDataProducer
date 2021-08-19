@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>springbasis</artifactId>
+    <artifactId>springDataProducer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>springbasis</name>
+    <name>springDataProducer</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>

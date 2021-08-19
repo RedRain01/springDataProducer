@@ -17,11 +17,10 @@ import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
+import rx.internal.schedulers.CachedThreadScheduler;
+
 import java.util.Date;
-import java.util.concurrent.LinkedBlockingQueue;
-import java.util.concurrent.ThreadFactory;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 import static javafx.scene.input.KeyCode.R;
 
@@ -40,15 +39,6 @@ public class OrderFlinkController {
 
     @Value("${server.port}")
     String port;
-
-
-
-    @Autowired
-    private RedissonLocker redissonLocker;
-
-
-    @Autowired
-    private OrderdetailService orderdetailService;
 
     @Autowired
     private OrderService orderService;
@@ -92,6 +82,7 @@ public class OrderFlinkController {
                     new LinkedBlockingQueue<>(10000),
                     threadFactory,
                     new ThreadPoolExecutor.AbortPolicy());
+
             //获取redis中单个端口订单数
             Object portNum = redisUtil.get(port+"port");
             if (null == portNum) {
@@ -109,23 +100,9 @@ public class OrderFlinkController {
             if (idNumObj == null) {
                 redisUtil.set("idNum",orderService.maxId()+1);
             }
-//            //获取redis中存储的订单id
-//            Object idNumObj = redisUtil.get("idNum");
-//            if (idNumObj == null) {
-//                redisUtil.set("idNum",orderService.maxId()+1);
-//            }else {
-//                Integer idNumLong=(Integer)idNumObj;
-//                if (idNumLong>orderId) {
-//                    redisUtil.set("idNum",orderService.maxId()+1);
-//                }else {
-//                    redisUtil.set("idNum",idNumLong);
-//                }
-//            }
 
             for (int i = 0; i < oderAddParam.getQuantity(); i++) {
                 Order order=new Order();
-                //测试数据延迟代码
-                //order.setId(String.valueOf(orderId));
                 order.setCommodityId(Myutil.getCommodity(oderAddParam.getCargoNum()));
                 order.setOrderNum(1);
                 order.setUsercode(oderAddParam.getUserCode());
@@ -147,16 +124,8 @@ public class OrderFlinkController {
         return "正在新增,可点击（查询消费）刷新数据<<<<<<<<<<<";
     }
     private void check(Order order) {
-        //上锁
-       // LockUtil.lock(KEY);
         try {
-            //上锁
-//            Integer idNum =(Integer)redisUtil.get("idNum");
-//            order.setId(String.valueOf(idNum));
-//            int i = orderService.create(order);
-//            final long idNum1 = redisUtil.incr("idNum", 1);
-
-             long idNum1 = redisUtil.incr("idNum", 1);
+            long idNum1 = redisUtil.incr("idNum", 1);
             order.setId(String.valueOf(idNum1));
             int i = orderService.create(order);
             if (i == 1) {
@@ -169,9 +138,6 @@ public class OrderFlinkController {
             redisUtil.incr(port + "file", 1);
             log.error("新增订单异常，订单信息"+JSON.toJSON(order),e);
             //异常处理
-        } finally {
-            //释放锁
-           // LockUtil.unlock(KEY);
         }
     }
 }

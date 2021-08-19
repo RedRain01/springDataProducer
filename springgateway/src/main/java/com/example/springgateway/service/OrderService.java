@@ -21,6 +21,9 @@ public interface OrderService {
     @RequestMapping(value = "/findRedis",method = RequestMethod.POST)
     public String findRedis();
 
+    @RequestMapping(value = "/countTop",method = RequestMethod.POST)
+    public String countTop();
+
     @RequestMapping(value = "/cleanRedis",method = RequestMethod.POST)
     public String cleanRedis();
 
