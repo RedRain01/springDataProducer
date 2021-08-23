@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.example.springservice.dao.EventUserMapper">
+
+	<!-- 结果Map -->
+	<resultMap id="BaseResultMap" type="com.example.springpublic.entity.event.EventUser">
+		<result property="userName" jdbcType="VARCHAR" column="user_name"/>
+		<result property="userCode" jdbcType="VARCHAR" column="user_code"/>
+		<result property="phone" jdbcType="VARCHAR" column="phone"/>
+		<result property="createTime" jdbcType="TIMESTAMP" column="create_time"/>
+		<result property="status" jdbcType="VARCHAR" column="status"/>
+		<result property="nature" jdbcType="VARCHAR" column="nature"/>
+		<result property="password" jdbcType="VARCHAR" column="password"/>
+	</resultMap>
+	
+	<!-- 查询列 -->
+	<sql id="BaseColumnList">
+		user_name,user_code,phone,create_time,status,nature,password
+	</sql>
+				
+	<!--创建记录 -->
+	<insert id="create" parameterType="com.example.springpublic.entity.event.EventUser">
+		INSERT INTO event_user
+		<trim prefix="(" suffix=")" suffixOverrides="," >
+			 <if test="userName!=null and userName!=''">user_name,</if>
+			 <if test="userCode!=null and userCode!=''">user_code,</if>
+			 <if test="phone!=null and phone!=''">phone,</if>
+			 <if test="createTime!=null">create_time,</if>
+			 <if test="status!=null and status!=''">status,</if>
+			 <if test="nature!=null and nature!=''">nature,</if>
+			 <if test="password!=null and password!=''">password</if>
+		</trim>
+		<trim prefix="VALUES (" suffix=")" suffixOverrides="," >
+			<if test="userName!=null and userName!=''">#{userName,jdbcType=VARCHAR},</if>
+			<if test="userCode!=null and userCode!=''">#{userCode,jdbcType=VARCHAR},</if>
+			<if test="phone!=null and phone!=''">#{phone,jdbcType=VARCHAR},</if>
+			<if test="createTime!=null">#{createTime,jdbcType=TIMESTAMP},</if>
+			<if test="status!=null and status!=''">#{status,jdbcType=VARCHAR},</if>
+			<if test="nature!=null and nature!=''">#{nature,jdbcType=VARCHAR},</if>
+			<if test="password!=null and password!=''">#{password,jdbcType=VARCHAR}</if>
+		</trim>
+	</insert>
+	
+	<!-- 更新记录 -->
+	
+	<!-- 按对象查询 -->
+	<select id="queryByEventUser" parameterType="com.example.springpublic.entity.event.EventUser" resultMap="BaseResultMap">
+		SELECT <include refid="BaseColumnList" />
+		FROM event_user 
+		<where>
+		1=1
+			<if test="userName!=null and userName!=''">AND user_name = #{userName,jdbcType=VARCHAR}</if>
+			<if test="userCode!=null and userCode!=''">AND user_code = #{userCode,jdbcType=VARCHAR}</if>
+			<if test="phone!=null and phone!=''">AND phone = #{phone,jdbcType=VARCHAR}</if>
+            <if test="createTime!=null">AND create_time = #{createTime,jdbcType=TIMESTAMP}</if>
+			<if test="status!=null and status!=''">AND status = #{status,jdbcType=VARCHAR}</if>
+			<if test="nature!=null and nature!=''">AND nature = #{nature,jdbcType=VARCHAR}</if>
+			<if test="password!=null and password!=''">AND password = #{password,jdbcType=VARCHAR}</if>
+		</where>
+	</select>
+	
+	<sql id="pageHead">
+	   SELECT * FROM (
+	       SELECT ROWNUM AS RN, TM.* FROM (
+	   
+	</sql>
+	<sql id="pageTail">
+	   ) TM ) TMP
+	   <where>
+	       TMP.RN &gt; (${pageNum}-1)*${pageSize}
+	       AND TMP.RN &lt;= ${pageNum}*${pageSize}
+	   </where>
+	</sql>
+	<sql id="pageBody">
+	   SELECT <include refid="BaseColumnList"/>
+           FROM event_user
+           <where>
+                <if test="userName!=null and userName!=''">AND user_name = #{userName,jdbcType=VARCHAR}</if>
+                <if test="userCode!=null and userCode!=''">AND user_code = #{userCode,jdbcType=VARCHAR}</if>
+                <if test="phone!=null and phone!=''">AND phone = #{phone,jdbcType=VARCHAR}</if>
+                <if test="createTime!=null">AND create_time = #{createTime,jdbcType=TIMESTAMP}</if>
+                <if test="status!=null and status!=''">AND status = #{status,jdbcType=VARCHAR}</if>
+                <if test="nature!=null and nature!=''">AND nature = #{nature,jdbcType=VARCHAR}</if>
+                <if test="password!=null and password!=''">AND password = #{password,jdbcType=VARCHAR}</if>
+           </where>
+	</sql>
+	
+	<!-- 根据条件分页 -->
+	<select id="queryByPage" parameterType="java.util.Map" resultMap="BaseResultMap">
+	   <include refid="pageHead"/>
+	       <include refid="pageBody"/>
+	   <include refid="pageTail"/>
+	</select>
+	
+	<!-- 根据条件查询总数 -->
+    <select id="countByCondtion" parameterType="java.util.Map" resultType="long">
+       SELECT COUNT(*) FROM event_user
+            <where>
+                1=1
+	            <if test="userName!=null and userName!=''">AND user_name = #{userName,jdbcType=VARCHAR}</if>
+	            <if test="userCode!=null and userCode!=''">AND user_code = #{userCode,jdbcType=VARCHAR}</if>
+	            <if test="phone!=null and phone!=''">AND phone = #{phone,jdbcType=VARCHAR}</if>
+	            <if test="createTime!=null">AND create_time = #{createTime,jdbcType=TIMESTAMP}</if>
+	            <if test="status!=null and status!=''">AND status = #{status,jdbcType=VARCHAR}</if>
+	            <if test="nature!=null and nature!=''">AND nature = #{nature,jdbcType=VARCHAR}</if>
+	            <if test="password!=null and password!=''">AND password = #{password,jdbcType=VARCHAR}</if>
+            </where>
+    </select>
+</mapper>
+

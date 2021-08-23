@@ -1,9 +1,7 @@
 package com.example.springgateway.controller;
 
 import com.example.springgateway.service.EventService;
-import com.example.springgateway.service.OrderFlinkService;
-import com.example.springpublic.entity.Event;
-import com.example.springpublic.entity.OderAddParam;
+import com.example.springpublic.entity.event.Event;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

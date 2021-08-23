@@ -1,28 +1,17 @@
-package com.example.springservice.controller;
+package com.example.springservice.controller.event;
 
-import com.alibaba.druid.util.StringUtils;
-import com.alibaba.fastjson.JSON;
-import com.example.springpublic.entity.Event;
-import com.example.springpublic.entity.OderAddParam;
-import com.example.springpublic.entity.Order;
+import com.example.springpublic.entity.event.Event;
 import com.example.springservice.service.EventService;
-import com.example.springservice.service.OrderService;
-import com.example.springservice.service.UserService;
-import com.example.springservice.util.Myutil;
-import com.example.springservice.util.RedisUtil;
-import com.google.common.util.concurrent.ThreadFactoryBuilder;
+import com.example.springservice.service.EventUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.LinkedBlockingQueue;
-import java.util.concurrent.ThreadFactory;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
 
 /**
  * @author ：why
@@ -32,11 +21,14 @@ import java.util.concurrent.TimeUnit;
 
 @Slf4j
 @RestController
-public class EventController {
+public class EventUserController {
 
 
     @Autowired
     private EventService eventService;
+
+    @Autowired
+    private EventUserService eventUserService;
 
 
 

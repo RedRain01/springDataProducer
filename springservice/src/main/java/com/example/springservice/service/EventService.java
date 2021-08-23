@@ -5,7 +5,7 @@ package com.example.springservice.service;
 
 
 
-import com.example.springpublic.entity.Event;
+import com.example.springpublic.entity.event.Event;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -28,7 +28,7 @@ public interface EventService {
 	 */
 	public int create(Event event);
 	
-	
+
 	/**
 	 * 根据主键查询对象
 	 * @param eventId
@@ -37,7 +37,7 @@ public interface EventService {
 	 * @since 2021-08-19 17:37:57
 	 */
 	public Event queryByPk(Integer eventId);
-	
+
 	/**
 	 * 根据主键修改对象
 	 * @param event
@@ -46,7 +46,7 @@ public interface EventService {
 	 * @since 2021-08-19 17:37:57
 	 */
 	public int updateByPk(Event event);
-	
+
 	/**
 	 * 根据主键删除对象
 	 * @param eventId
@@ -56,7 +56,7 @@ public interface EventService {
 	 */
 	public int deleteByPk(Integer eventId);
 
-	
+
 	/**
 	 * 根据对象查询数据
 	 * @param event
@@ -65,7 +65,7 @@ public interface EventService {
 	 * @since 2021-08-19 17:37:57
 	 */
 	public java.util.List<Event> queryByEvent(Event event);
-	
+
 	/**
 	 * 根据条件分页查询数据
 	 * @param paramMap

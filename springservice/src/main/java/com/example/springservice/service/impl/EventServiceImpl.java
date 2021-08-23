@@ -1,11 +1,8 @@
 package com.example.springservice.service.impl;
 
-import com.example.springpublic.entity.Event;
-import com.example.springpublic.entity.Orderdetail;
+import com.example.springpublic.entity.event.Event;
 import com.example.springservice.dao.EventDao;
-import com.example.springservice.dao.OrderdetailDao;
 import com.example.springservice.service.EventService;
-import com.example.springservice.service.OrderdetailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

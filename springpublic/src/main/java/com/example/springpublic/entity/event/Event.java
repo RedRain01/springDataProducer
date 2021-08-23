@@ -1,7 +1,7 @@
 /**
  * All rights reserved by YSCompany Inc.
  */
-package com.example.springpublic.entity;
+package com.example.springpublic.entity.event;
 
 
 /**
