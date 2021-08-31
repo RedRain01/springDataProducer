@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Map;
 
-@Service(value = "eventService")
+@Service(value = "eventUserService")
 public class EventUserServiceImpl implements EventUserService {
 
 

@@ -31,6 +31,7 @@ public class EventController {
     public Map<String,String> addOrderFlink(@RequestBody Event event) {
         Map<String,String> map=new HashMap<>();
         try {
+
             int i = eventService.create(event);
             if (i >0) {
                 map.put("status","success");

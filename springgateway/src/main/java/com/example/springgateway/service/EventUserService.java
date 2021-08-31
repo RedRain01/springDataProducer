@@ -8,12 +8,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import java.util.List;
+
 @Component
 @FeignClient(name = "springService")
-public interface EventUerService {
+public interface EventUserService {
 
-    @RequestMapping(value = "/addEvent",method = RequestMethod.GET)
-    public String addEvent(@RequestBody EventUser eventUser);
+    @RequestMapping(value = "/queryByEventUser",method = RequestMethod.GET)
+    public List<EventUser> queryByEventUser(@RequestBody EventUser eventUser);
 
 }
 

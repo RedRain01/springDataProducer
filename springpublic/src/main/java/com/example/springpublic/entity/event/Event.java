@@ -26,6 +26,9 @@ public class Event {
 	
 	/** . */
 	private String userCode ;
+
+	/** . */
+	private String userName ;
 	
 	/** . */
 	private String status ;
@@ -41,10 +44,16 @@ public class Event {
 	
 	/** . */
 	private String sort ;
-	
-	
 
-    /** set . */
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	/** set . */
 	public void setEventId(Integer eventId) {
 		this.eventId = eventId;
 	}

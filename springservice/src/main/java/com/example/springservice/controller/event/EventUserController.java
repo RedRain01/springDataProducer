@@ -34,7 +34,7 @@ public class EventUserController {
 
 
     @ResponseBody
-    @RequestMapping("/addEvent")
+    @RequestMapping("/addEven22t")
     public Map<String,String> addOrderFlink(@RequestBody Event event) {
         Map<String,String> map=new HashMap<>();
         try {
