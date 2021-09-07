@@ -5,17 +5,19 @@ import com.example.springpublic.entity.event.Event;
 import com.example.springpublic.entity.event.EventUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.reactive.function.server.ServerRequest;
+import org.springframework.web.server.ServerWebExchange;
+import org.springframework.web.server.WebSession;
+import reactor.core.publisher.Mono;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 
 /**
  * @author ：why
  * @description：TODO
  * @date ：2020/10/4 12:43
  */
-
 @RestController
+@SessionAttributes("event")
 public class EventController {
 
 
@@ -24,13 +26,16 @@ public class EventController {
 
     @ResponseBody
     @RequestMapping(value = "/addEvent",method = RequestMethod.POST)
-    public String addEvent(@RequestBody Event event,HttpServletRequest request){
-        HttpSession session = request.getSession();
+    public String addEvent(Event event, ServerWebExchange exchange){
+        Mono<WebSession> session = exchange.getSession();
+      //  session.flatMap()
+       // session.
+/*        Mono<WebSession> session = request.session();
         EventUser eventUser = (EventUser) session.getAttribute("eventUser");
         event.setUserCode(eventUser.getUserCode());
         event.setUserName(eventUser.getUserName());
         event.setParentId(0);
-        event.setStatus("00");
+        event.setStatus("00");*/
         String addEvent = eventService.addEvent(event);
         return addEvent;
     }
