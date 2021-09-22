@@ -4,6 +4,8 @@
 package com.example.springpublic.entity.event;
 
 
+import java.util.Date;
+
 /**
  * <p>
  * @author WillYang
@@ -35,10 +37,16 @@ public class EventUser {
 	
 	/** . */
 	private String password ;
-	
-	
 
-    /** set . */
+	public EventUser(String userName, String password) {
+		this.userName = userName;
+		this.password = password;
+	}
+
+	public EventUser() {
+	}
+
+	/** set . */
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}

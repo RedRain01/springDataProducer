@@ -1,0 +1,26 @@
+eureka:
+  client:
+    serviceUrl:
+      #defaultZone: http://192.168.140.141:8766/eureka/
+      defaultZone: http://localhost:8766/eureka/
+server:
+  port: 8003
+spring:
+  r2dbc:
+    url: r2dbcs:mysql://localhost:3306/spring_r2dbc_samples?sslMode=DISABLED
+    username: root
+    password: root
+  application:
+    name: springEvenService
+
+logging:
+  level:
+    web: debug
+    org:
+      springframework:
+        data:
+          r2dbc: debug
+    com:
+      boyal:
+        demo:
+          springr2dbcsamples: debug
