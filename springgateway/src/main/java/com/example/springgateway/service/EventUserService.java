@@ -21,8 +21,14 @@ public interface EventUserService {
     public Mono<EventUser> queryByEventUser(@RequestBody EventUser eventUser);
 
 
-    @RequestMapping(value = "/code",method = RequestMethod.GET)
+    @RequestMapping(value = "/code",method = RequestMethod.POST)
     public Mono<ResultBase> code(@RequestBody String eventUser);
+
+    @RequestMapping(value = "/ee",method = RequestMethod.POST)
+    public Mono<ResultBase> ee();
+
+    @RequestMapping(value = "/ddd",method = RequestMethod.POST)
+    public String ddd(@RequestBody String eventUser);
 
 }
 

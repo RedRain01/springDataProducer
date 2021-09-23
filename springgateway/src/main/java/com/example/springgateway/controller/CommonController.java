@@ -1,5 +1,6 @@
 package com.example.springgateway.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.example.springgateway.controller.event.HttpResult;
 import com.example.springgateway.service.EventService;
 import com.example.springgateway.service.EventUserService;
@@ -69,19 +70,72 @@ return null;
                 .switchIfEmpty(Mono.just(new BaseOut("error","登录失败")));
     }
 
+
     /**
      * 登录接口
      * @return
      */
-    @GetMapping("/tee")
-    public  Mono<BaseOut> tee(@RequestBody Map<String, Object> param, WebSession webSession) {
+    @RequestMapping("/ddd")
+    public  String ddd() {
+        return eventUserService.ddd("9999");
+    }
+
+    /**
+     * 登录接口
+     * @return
+     */
+    @PostMapping("/tee")
+    public  Mono<BaseOut> tee() {
         log.info("-------------45----------------------------");
         return Mono.just("")
                 .flatMap(eventUserService::code)
-                .onErrorMap(e ->new RuntimeException("change error type"))
-                .doOnNext(i ->log.info("------------6666---------------------",i))
-                .onErrorResume(e ->Mono.just(new ResultBase("erorr","123456789")))
-                .filter(it ->param.get("").equals(it))
+               /* .onErrorMap(e ->new RuntimeException("change error type"))
+                .doOnNext(i ->log.info("------------6666---------------------",i))*/
+           /*     .onErrorResume(e ->{
+                    log.info("-------------3----------------",e.getMessage());
+                    return Mono.just(new ResultBase("erorr","123456789"));
+                })*/
+                //  .onErrorResume(e ->Mono.just(new ResultBase("erorr","123456789")))
+               /* .filter(it ->{
+                    log.info("=======55=========",it);
+                })
+                .filter(it ->"".equals(it))*/
+                .map(it ->{
+                    if (it == null) {
+                        log.info("=======55=========");
+                    }else {
+                        log.info("================",it.getMessage());
+                    }
+                    return  it;
+                })
+                .map(it ->new BaseOut("success","登录成功"))
+                .onErrorMap(e ->new RuntimeException("change error type"+e.getMessage()))
+                .switchIfEmpty(Mono.just(new BaseOut("error","登录失败")));
+    }
+
+
+    /**
+     * 登录接口
+     * @return
+     */
+    @PostMapping("/ee")
+    public  Mono<BaseOut> ee() {
+        log.info("-------------45----------------------------");
+        return Mono.just(Mono.empty())
+                .map(it ->{
+                    Mono<ResultBase> ee = eventUserService.ee();
+                    System.out.println("----------------"+ JSON.toJSON(ee));
+                    return null;
+                })
+              //  .flatMap(eventUserService::ee)
+                .map(it ->{
+                    if (it == null) {
+                        log.info("=======55=========");
+                    }else {
+                        log.info("================",it.toString());
+                    }
+                    return  it;
+                })
                 .map(it ->new BaseOut("success","登录成功"))
                 .onErrorMap(e ->new RuntimeException("change error type"+e.getMessage()))
                 .switchIfEmpty(Mono.just(new BaseOut("error","登录失败")));

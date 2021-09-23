@@ -11,7 +11,6 @@ import reactor.core.publisher.Mono;
 
 @Validated
 @RestController
-@RequestMapping("/api/students")
 public class StudentController {
 
     // Spring recommend final and passed in constructor
@@ -34,10 +33,9 @@ public class StudentController {
         private String remark;
     }
 
-    @GetMapping("/code")
-    public Mono<ResultBase> code(
-
-    ) {
+    @ResponseBody
+    @RequestMapping("/code")
+    public Mono<ResultBase> code(@RequestBody String eventUser) {
        String code="S0001";
         return studentService.findStudentByCode(code)
                 .zipWhen(student -> studentService.updateStudentProfile(student, "req.address", "888"),
@@ -46,11 +44,15 @@ public class StudentController {
                 .map(student -> ResultBase.OK())
                 ;
     }
+    @ResponseBody
+    @RequestMapping("/ddd")
+    public String ddd(@RequestBody String eventUser) {
+        String code="S0001";
+        return code;
+    }
 
-    @RequestMapping("/code")
-    public Mono<ResultBase> tee
-            (
-    ) {
+    @RequestMapping("/tee")
+    public Mono<ResultBase> tee () {
         String code="S0001";
         return studentService.findStudentByCode(code)
                 .zipWhen(student -> studentService.updateStudentProfile(student, "req.address", "888"),
@@ -60,4 +62,15 @@ public class StudentController {
                 ;
     }
 
+
+    @RequestMapping("/ee")
+    public Mono<ResultBase> ee () {
+        String code="S0001";
+        return studentService.findStudentByCode(code)
+                .zipWhen(student -> studentService.updateStudentProfile(student, "req.address", "888"),
+                        (student, studentSaved) -> studentSaved
+                )
+                .map(student -> ResultBase.OK())
+                ;
+    }
 }
