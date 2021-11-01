@@ -1,3 +1,4 @@
+/*
 package com.example.springevent.entity;
 
 import lombok.Data;
@@ -14,3 +15,4 @@ public class Student extends EntityBase {
 	private LocalDate birthday;
 	private String address;
 }
+*/

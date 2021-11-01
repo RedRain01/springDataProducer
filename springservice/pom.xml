@@ -42,10 +42,10 @@
             <version>2.2.6.RELEASE</version>
         </dependency>
 
-        <dependency>
+      <!--  <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zipkin</artifactId>
-        </dependency>
+        </dependency>-->
         <!--mybatis+mysql-->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
@@ -108,10 +108,11 @@
         </dependency>
 <!--日志-->
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.8</version>
+            <version>1.18.22</version>
             <scope>provided</scope>
         </dependency>
 

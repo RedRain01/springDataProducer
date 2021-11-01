@@ -1,3 +1,4 @@
+/*
 package com.example.springgateway;
 
 import org.junit.Test;
@@ -26,10 +27,12 @@ public class Demo {
                                      SS.split("");
                                     return s;
                                 })
-                               /* .onErrorResume(e -> {
+                               */
+/* .onErrorResume(e -> {
                                     System.out.println("--------------"+e.getMessage());
                                     return  Mono.just("==============="+e.getMessage());
-                                })*/
+                                })*//*
+
                                 .map(it ->{
                                     it.equals("333");
                                     return "44";
@@ -51,6 +54,7 @@ public class Demo {
     }
 
 
+*/
 /*
     @Test
     public  void dd(){
@@ -69,7 +73,8 @@ public class Demo {
         }).subscribe(System.out::println));
 
     }
-*/
+*//*
+
 
     class Person{
 
@@ -93,3 +98,4 @@ public class Demo {
         }
 
 }}
+*/

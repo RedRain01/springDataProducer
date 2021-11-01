@@ -1,3 +1,4 @@
+/*
 package com.example.springevent.entity;
 
 import lombok.Data;
@@ -23,3 +24,4 @@ public class EntityBase {
 	private LocalDateTime updatedAt;
 	private String updatedBy;
 }
+*/

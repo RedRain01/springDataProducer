@@ -1,4 +1,4 @@
-package com.example.springgateway;
+package com.example.springreactorgateway;
 
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.boot.SpringApplication;
@@ -15,19 +15,16 @@ import reactivefeign.spring.config.EnableReactiveFeignClients;
 
 import java.util.stream.Collectors;
 
-@EnableDiscoveryClient
 @SpringBootApplication
 @EnableEurekaClient
 @RestController
 @EnableReactiveFeignClients
 @EnableFeignClients
 
-/*
-@EnableReactiveFeignClients
-*/
-public class SpringgatewayApplication {
+public class SpringReactorGatewayApplication {
+
     public static void main(String[] args) {
-        SpringApplication.run(SpringgatewayApplication.class, args);
+        SpringApplication.run(SpringReactorGatewayApplication.class, args);
     }
 
 
@@ -36,4 +33,6 @@ public class SpringgatewayApplication {
     public HttpMessageConverters messageConverters(ObjectProvider<HttpMessageConverter<?>> converters) {
         return new HttpMessageConverters(converters.orderedStream().collect(Collectors.toList()));
     }
+
+
 }

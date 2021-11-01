@@ -12,9 +12,13 @@ import com.example.springpublic.entity.event.EventUser;
 import com.example.springpublic.entity.event.ResultBase;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
+import org.reactivestreams.Publisher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.reactive.function.client.ClientResponse;
+import org.springframework.web.reactive.function.client.WebClient;
 import org.springframework.web.server.WebSession;
 import reactor.core.CoreSubscriber;
 import reactor.core.publisher.Flux;
@@ -119,26 +123,13 @@ return null;
      * @return
      */
     @PostMapping("/ee")
-    public  Mono<BaseOut> ee() {
-        log.info("-------------45----------------------------");
-        return Mono.just(Mono.empty())
-                .map(it ->{
-                    Mono<ResultBase> ee = eventUserService.ee();
-                    System.out.println("----------------"+ JSON.toJSON(ee));
-                    return null;
-                })
-              //  .flatMap(eventUserService::ee)
-                .map(it ->{
-                    if (it == null) {
-                        log.info("=======55=========");
-                    }else {
-                        log.info("================",it.toString());
-                    }
-                    return  it;
-                })
-                .map(it ->new BaseOut("success","登录成功"))
-                .onErrorMap(e ->new RuntimeException("change error type"+e.getMessage()))
-                .switchIfEmpty(Mono.just(new BaseOut("error","登录失败")));
+    public  Publisher<ClientResponse> ee() {
+        WebClient client = WebClient.create("http://localhost:8003");
+        Mono<ClientResponse> exchange = client.get()
+                .uri("/ee")
+                .accept(MediaType.TEXT_PLAIN)
+                .exchange();
+        return  exchange;
     }
 
 }

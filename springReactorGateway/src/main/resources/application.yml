@@ -3,8 +3,7 @@ eureka:
     service-url:
       defaultZone: http://localhost:8766/eureka/
 server:
-  port: 8200
-  connection-timeout: 20000
+  port: 8400
 spring:
   cloud:
     gateway:
@@ -15,12 +14,10 @@ spring:
             allowedMethods:
             - POST
   application:
-    name: springGateWay
+    name: springReactorGateWay
   devtools:
     restart:
       enabled: true
-  main:
-    allow-bean-definition-overriding: true
 stu-provide:
   ribbon:
     #    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule #配置规则 随机

@@ -1,3 +1,4 @@
+/*
 package com.example.springevent.repository;
 
 import com.example.springevent.entity.Student;
@@ -16,3 +17,4 @@ public interface StudentRepository extends ReactiveCrudRepository<Student, Long>
 	)
 	Mono<Student> findByCodeAndActiveTrue(String code);
 }
+*/

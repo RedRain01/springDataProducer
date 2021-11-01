@@ -27,6 +27,9 @@ public interface EventUserService {
     @RequestMapping(value = "/ee",method = RequestMethod.POST)
     public Mono<ResultBase> ee();
 
+    @RequestMapping(value = "/eee",method = RequestMethod.POST)
+    public String eee();
+
     @RequestMapping(value = "/ddd",method = RequestMethod.POST)
     public String ddd(@RequestBody String eventUser);
 
