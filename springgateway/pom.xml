@@ -99,12 +99,12 @@
             <version>${feign-reactor.version}</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.redisson/redisson -->
+    <!--    &lt;!&ndash; https://mvnrepository.com/artifact/org.redisson/redisson &ndash;&gt;
         <dependency>
             <groupId>org.redisson</groupId>
             <artifactId>redisson</artifactId>
             <version>3.11.2</version>
-        </dependency>
+        </dependency>-->
 
 
       <!--zipkin-->
@@ -174,18 +174,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <!--repositories节点是配置maven下载jar的中央仓库-->
-    <repositories>
-        <repository>
-            <id>spring-milestones</id>
-            <name>Spring Milestones</name>
-            <url>https://repo.spring.io/libs-milestone</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
 
     <build>
         <plugins>

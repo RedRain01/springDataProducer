@@ -1,6 +1,8 @@
 package com.example.springevent.controller;
 
 
+import com.example.springevent.service.StudentService;
+import com.example.springpublic.entity.event.ResultBase;
 import com.netflix.discovery.EurekaClient;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +24,10 @@ public class StudentController {
 
     @Value("${spring.application.name}")
     private String appName;
+
+    @Autowired
+    private StudentService studentService;
+
 /*
 
     // Spring recommend final and passed in constructor
@@ -64,7 +70,7 @@ public class StudentController {
         return code;
     }
 
-/*    @RequestMapping("/tee")
+   @RequestMapping("/tee")
     public Mono<ResultBase> tee () {
         String code="S0001";
         return studentService.findStudentByCode(code)
@@ -73,7 +79,7 @@ public class StudentController {
                 )
                 .map(student -> ResultBase.OK())
                 ;
-    }*/
+    }
 
 
 /*    @RequestMapping("/ee")

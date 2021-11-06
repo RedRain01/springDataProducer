@@ -1,6 +1,6 @@
-/*
 package com.example.springevent.service;
 
+import com.alibaba.fastjson.JSON;
 import com.example.springevent.entity.Student;
 import com.example.springevent.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,12 +37,13 @@ public class StudentService {
 			if (!StringUtils.isEmpty(remark)) {
 				student.setRemark(remark);
 			}
-
-			return studentRepository.save(student);
+			student.setName("99999");
+			Mono<Student> save = studentRepository.save(student);
+			System.out.println("======================"+JSON.toJSON(save));
+			return save;
 		} else {
 			return Mono.error(new IllegalArgumentException("invalid parameters student update profile"));
 		}
 	}
 
 }
-*/
