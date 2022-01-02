@@ -20,6 +20,10 @@ class SpringgatewayApplicationTests {
                                 .flatMap(s -> Flux.fromArray(s.split(","))
                                         //对每个元素延迟1000ms
                                         .delayElements(Duration.ofMillis(1000)))
+                                .map( ss ->{
+                                    System.out.println("==============="+ss);
+                                    return ss;
+                                })
                                 .map(it ->it.equals("ee"))
                                 // 对每个元素进行打印 doOnNext不会消费数据流
                                 .doOnNext(System.out::print))
