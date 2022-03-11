@@ -57,6 +57,7 @@ return null;
     }
 
     /**
+     * 响应式编程
      * 登录接口
      * @return
      */
@@ -72,6 +73,46 @@ return null;
                 .map(it ->new BaseOut("success","登录成功"))
                 .onErrorMap(e ->new RuntimeException("change error type"+e.getMessage()))
                 .switchIfEmpty(Mono.just(new BaseOut("error","登录失败")));
+    }
+
+
+    @ResponseBody
+    @RequestMapping("/login666")
+    public String login666(@RequestBody EventUser eventUser){
+        return "addEvent";
+    }
+
+    /**
+     * 响应式编程
+     * 登录接口
+     * @return
+     */
+    @GetMapping("/login22")
+    @ResponseBody
+    public  String login22(WebSession webSession) {
+        webSession.getAttributes().put("11","22");
+        Object attribute = webSession.getAttribute("11");
+        String id = webSession.getId();
+        return "";
+    }
+
+
+    /**
+     * 响应式编程
+     * 登录接口
+     * @return
+     */
+    @GetMapping("/login33")
+    @ResponseBody
+    public  String login33(WebSession webSession) {
+        Object attribute = webSession.getAttribute("11");
+        String id = webSession.getId();
+        return "";
+    }
+    @GetMapping("/e3et")
+    @ResponseBody
+    public String eeew() {
+        return   "3333333333";
     }
 
 

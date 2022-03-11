@@ -39,7 +39,7 @@ spring:
       name: springService
     redis:
       database: 0
-      host: 192.168.85.128
+      host: 192.168.140.130
       port: 6379
       password:
       jedis:
