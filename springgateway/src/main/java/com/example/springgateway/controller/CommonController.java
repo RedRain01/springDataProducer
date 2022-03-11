@@ -35,6 +35,8 @@ public class CommonController {
     @ResponseBody
     @RequestMapping("/login123")
     public String addOrderDetil(@RequestBody Event event){
+
+        5555
         String addOrderDetil = eventService.addEvent(event);
         return addOrderDetil;
     }
